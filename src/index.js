@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css';
+import Fundamental from './fundamental/Fundamental';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const searchParams = new URLSearchParams(window.location.search);
+const page = searchParams.get('page');
+const shouldShowFundamental = page === 'fundamental';
+
 root.render(
   <React.StrictMode>
-    <App />
+    {shouldShowFundamental ? <Fundamental /> : <App />}
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
