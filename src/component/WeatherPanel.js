@@ -103,7 +103,6 @@ function WeatherPanel() {
             const locationResponse = await fetch(
                 `${REVERSE_GEOCODE_ENDPOINT}?lat=${lat}&lon=${lon}&limit=1&appid=${keyToUse}`
             );
-            console.log(locationResponse);
 
             let locationData = null;
             if (locationResponse.ok) {
