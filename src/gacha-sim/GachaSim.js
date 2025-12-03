@@ -6,37 +6,66 @@ import {
 } from "react";
 import ResultCard from "./ResultCard";
 import PullHistory from "./PullHistory";
+import PaymentDrawer from "./PaymentDrawer";
+import OrigeometryConvert from "./OrigeometryConvert";
+import { useCurrencyRates } from "./useCurrencyRates";
 import {
     loadStats,
     saveStats,
     rollGacha,
-    addOroberyl,
     resetPoolStats,
     getDisplayRates,
     getCosts,
     getCharSoftPityRate,
 } from "./helpers";
+import {
+    addBalance,
+    applyBundlePurchase,
+    convertOrigeometry as convertWalletOrigeometry,
+    createDefaultWallet,
+    BASE_CURRENCY,
+} from "./wallet";
 import "./GachaSim.css";
 
 function GachaSim() {
     const [poolType, setPoolType] = useState("character");
     const [stats, setStats] = useState(() => loadStats());
     const [results, setResults] = useState([]);
-    const [addOroberylAmount, setAddOroberylAmount] =
-        useState("");
-    const [showAddOroberyl, setShowAddOroberyl] =
-        useState(false);
     const [showPullHistory, setShowPullHistory] =
         useState(false);
     const [autoIntervalMs, setAutoIntervalMs] =
         useState(100);
     const [isAutoPulling, setIsAutoPulling] =
         useState(false);
+    const [isPaymentOpen, setIsPaymentOpen] =
+        useState(false);
+    const [selectedBundleId, setSelectedBundleId] =
+        useState(null);
+    const [walletCurrency, setWalletCurrency] =
+        useState(BASE_CURRENCY);
+    const [showConvertTooltip, setShowConvertTooltip] =
+        useState(false);
+
+    const {
+        formatDisplay,
+        convertToCny,
+        isLoading: isRateLoading,
+    } = useCurrencyRates();
+
+    const poolStats = stats[poolType];
+    const wallet = stats.wallet || createDefaultWallet();
+    const isCharacter = poolType === "character";
 
     // Save stats to localStorage whenever they change
     useEffect(() => {
         saveStats(stats);
     }, [stats]);
+
+    useEffect(() => {
+        if (!isCharacter && showConvertTooltip) {
+            setShowConvertTooltip(false);
+        }
+    }, [isCharacter, showConvertTooltip]);
 
     const handlePull = useCallback(
         (pulls) => {
@@ -69,17 +98,136 @@ function GachaSim() {
         [poolType, stats]
     );
 
-    const handleAddOroberyl = () => {
-        const amount = parseInt(addOroberylAmount, 10);
-        if (isNaN(amount) || amount <= 0) {
-            alert("Vui lòng nhập số lượng hợp lệ");
+    const handleTopUpBalance = (amountCny) => {
+        if (!amountCny || amountCny <= 0) {
+            alert("Số tiền nạp không hợp lệ");
             return;
         }
-        const updated = addOroberyl(amount, stats);
-        setStats(updated);
-        saveStats(updated);
-        setAddOroberylAmount("");
-        setShowAddOroberyl(false);
+        setStats((prev) => {
+            const currentWallet =
+                prev.wallet || createDefaultWallet();
+            const updatedWallet = addBalance(
+                currentWallet,
+                amountCny
+            );
+            const nextStats = {
+                ...prev,
+                wallet: updatedWallet,
+                character: {
+                    ...prev.character,
+                    oroberyl: updatedWallet.oroberyls,
+                },
+            };
+            saveStats(nextStats);
+            return nextStats;
+        });
+    };
+
+    const handleCheckout = async ({ bundleId }) => {
+        if (!bundleId) {
+            alert("Vui lòng chọn bundle trước");
+            return;
+        }
+        let checkoutSummary = null;
+        let checkoutError = null;
+        setStats((prev) => {
+            try {
+                const currentWallet =
+                    prev.wallet || createDefaultWallet();
+                const { wallet: updatedWallet, reward } =
+                    applyBundlePurchase(
+                        currentWallet,
+                        bundleId
+                    );
+                checkoutSummary = {
+                    prevBalance: currentWallet.balance_cny,
+                    nextBalance: updatedWallet.balance_cny,
+                    prevOrigeometry:
+                        currentWallet.origeometry,
+                    nextOrigeometry:
+                        updatedWallet.origeometry,
+                    reward,
+                };
+                const nextStats = {
+                    ...prev,
+                    wallet: updatedWallet,
+                    character: {
+                        ...prev.character,
+                        oroberyl: updatedWallet.oroberyls,
+                    },
+                };
+                saveStats(nextStats);
+                return nextStats;
+            } catch (error) {
+                checkoutError = error;
+                return prev;
+            }
+        });
+        if (checkoutError) {
+            alert(checkoutError.message);
+            return;
+        }
+        if (checkoutSummary) {
+            alert(
+                `Balance: ${formatDisplay(
+                    checkoutSummary.prevBalance,
+                    walletCurrency
+                )} -> ${formatDisplay(
+                    checkoutSummary.nextBalance,
+                    walletCurrency
+                )}\nOrigeometry: ${
+                    checkoutSummary.prevOrigeometry
+                } -> ${checkoutSummary.nextOrigeometry}`
+            );
+        }
+    };
+
+    const handleConvertOrigeometry = (amount) => {
+        let convertSummary = null;
+        let convertError = null;
+        setStats((prev) => {
+            try {
+                const currentWallet =
+                    prev.wallet || createDefaultWallet();
+                const { wallet: updatedWallet, received } =
+                    convertWalletOrigeometry(
+                        currentWallet,
+                        amount
+                    );
+                convertSummary = {
+                    prevOrigeometry:
+                        currentWallet.origeometry,
+                    nextOrigeometry:
+                        updatedWallet.origeometry,
+                    prevOroberyls: currentWallet.oroberyls,
+                    nextOroberyls: updatedWallet.oroberyls,
+                    received,
+                };
+                const nextStats = {
+                    ...prev,
+                    wallet: updatedWallet,
+                    character: {
+                        ...prev.character,
+                        oroberyl: updatedWallet.oroberyls,
+                    },
+                };
+                saveStats(nextStats);
+                return nextStats;
+            } catch (error) {
+                convertError = error;
+                return prev;
+            }
+        });
+        if (convertError) {
+            alert(convertError.message);
+            return;
+        }
+        if (convertSummary) {
+            alert(
+                `Origeometry: ${convertSummary.prevOrigeometry} -> ${convertSummary.nextOrigeometry}\nOroberyls: ${convertSummary.prevOroberyls} -> ${convertSummary.nextOroberyls}`
+            );
+            setShowConvertTooltip(false);
+        }
     };
 
     const handleResetPool = () => {
@@ -105,10 +253,8 @@ function GachaSim() {
     );
     const costs = useMemo(() => getCosts(), []);
 
-    const poolStats = stats[poolType];
-    const isCharacter = poolType === "character";
     const currency = isCharacter
-        ? stats.character.oroberyl
+        ? wallet.oroberyls
         : stats.weapon.arsenal_token;
     const currencyLabel = isCharacter
         ? "Oroberyl"
@@ -264,307 +410,329 @@ function GachaSim() {
     ]);
 
     return (
-        <div className="gacha-shell">
-            <div className="gacha-header">
-                <div className="gacha-header__left">
-                    <div className="pool-switch">
+        <>
+            <div className="gacha-shell">
+                <div className="gacha-header">
+                    <div className="gacha-header__left">
+                        <div className="pool-switch">
+                            <button
+                                type="button"
+                                className={`pool-switch__btn ${
+                                    poolType === "character"
+                                        ? "is-active"
+                                        : ""
+                                }`}
+                                onClick={() => {
+                                    setPoolType(
+                                        "character"
+                                    );
+                                    setResults([]);
+                                }}
+                            >
+                                Character
+                            </button>
+                            <button
+                                type="button"
+                                className={`pool-switch__btn ${
+                                    poolType === "weapon"
+                                        ? "is-active"
+                                        : ""
+                                }`}
+                                onClick={() => {
+                                    setPoolType("weapon");
+                                    setResults([]);
+                                }}
+                            >
+                                Weapon
+                            </button>
+                        </div>
                         <button
                             type="button"
-                            className={`pool-switch__btn ${
+                            className="pool-reset"
+                            onClick={handleResetPool}
+                            title={`Reset ${
                                 poolType === "character"
-                                    ? "is-active"
-                                    : ""
-                            }`}
-                            onClick={() => {
-                                setPoolType("character");
-                                setResults([]);
-                            }}
+                                    ? "Character"
+                                    : "Weapon"
+                            } pool statistics`}
                         >
-                            Character
-                        </button>
-                        <button
-                            type="button"
-                            className={`pool-switch__btn ${
-                                poolType === "weapon"
-                                    ? "is-active"
-                                    : ""
-                            }`}
-                            onClick={() => {
-                                setPoolType("weapon");
-                                setResults([]);
-                            }}
-                        >
-                            Weapon
+                            Reset
                         </button>
                     </div>
-                    <button
-                        type="button"
-                        className="pool-reset"
-                        onClick={handleResetPool}
-                        title={`Reset ${
-                            poolType === "character"
-                                ? "Character"
-                                : "Weapon"
-                        } pool statistics`}
-                    >
-                        Reset
-                    </button>
-                </div>
-                <div className="gacha-header__right">
-                    <div
-                        className="gacha-header__pull-history"
-                        style={{ position: "relative" }}
-                    >
-                        <button
-                            type="button"
-                            className="pull-history-btn"
-                            onClick={() =>
-                                setShowPullHistory(
-                                    !showPullHistory
-                                )
-                            }
-                            title="Xem Pull History"
+                    <div className="gacha-header__right">
+                        <div
+                            className="gacha-header__pull-history"
+                            style={{ position: "relative" }}
                         >
-                            Pull History
-                        </button>
-                        <PullHistory
-                            poolType={poolType}
-                            stats={stats}
-                            isOpen={showPullHistory}
-                            onClose={() =>
-                                setShowPullHistory(false)
-                            }
-                        />
-                    </div>
-                    <div className="currency-display">
-                        <span className="currency-display__label">
-                            {currencyLabel}:
-                        </span>
-                        <span className="currency-display__value">
-                            {currency.toLocaleString()}
-                        </span>
-                        {isCharacter && (
+                            <button
+                                type="button"
+                                className="pull-history-btn"
+                                onClick={() =>
+                                    setShowPullHistory(
+                                        !showPullHistory
+                                    )
+                                }
+                                title="Xem Pull History"
+                            >
+                                Pull History
+                            </button>
+                            <PullHistory
+                                poolType={poolType}
+                                stats={stats}
+                                isOpen={showPullHistory}
+                                onClose={() =>
+                                    setShowPullHistory(
+                                        false
+                                    )
+                                }
+                            />
+                        </div>
+                        <div className="currency-display currency-display--origeometry">
+                            <span className="currency-display__label">
+                                Origeometry:
+                            </span>
+                            <span className="currency-display__value">
+                                {wallet.origeometry.toLocaleString()}
+                            </span>
                             <button
                                 type="button"
                                 className="currency-display__add"
-                                onClick={() =>
-                                    setShowAddOroberyl(
-                                        !showAddOroberyl
-                                    )
-                                }
-                                title="Thêm Oroberyl"
+                                onClick={() => {
+                                    setIsPaymentOpen(true);
+                                    setShowConvertTooltip(
+                                        false
+                                    );
+                                }}
+                                title="Mở Payment / Checkout"
                             >
                                 +
                             </button>
-                        )}
-                    </div>
-                    {showAddOroberyl && isCharacter && (
-                        <div className="add-oroberyl">
-                            <input
-                                type="number"
-                                className="add-oroberyl__input"
-                                placeholder="Số lượng"
-                                value={addOroberylAmount}
-                                onChange={(e) =>
-                                    setAddOroberylAmount(
-                                        e.target.value
-                                    )
-                                }
-                                min="1"
-                            />
-                            <button
-                                type="button"
-                                className="add-oroberyl__btn"
-                                onClick={handleAddOroberyl}
-                            >
-                                Thêm
-                            </button>
-                            <button
-                                type="button"
-                                className="add-oroberyl__btn add-oroberyl__btn--cancel"
-                                onClick={() => {
-                                    setShowAddOroberyl(
-                                        false
-                                    );
-                                    setAddOroberylAmount(
-                                        ""
-                                    );
-                                }}
-                            >
-                                Hủy
-                            </button>
                         </div>
-                    )}
-                </div>
-            </div>
-
-            <div className="gacha-display">
-                {results.length === 0 ? (
-                    <div className="gacha-empty">
-                        Chưa có kết quả. Thử gacha nhé?
-                    </div>
-                ) : (
-                    <div className="gacha-results">
-                        {results.map((result) => (
-                            <ResultCard
-                                key={result.id}
-                                rarity={result.rarity}
-                                order={result.order}
-                                win={result.win}
-                            />
-                        ))}
-                    </div>
-                )}
-            </div>
-
-            <div className="gacha-controls">
-                <div className="gacha-controls__body">
-                    <div className="gacha-rate-panel">
-                        <div className="rate-card">
-                            <span className="rate-card__label rate-card__label--five">
-                                5★ Rate
+                        <div className="currency-display currency-display--wallet">
+                            <span className="currency-display__label">
+                                {currencyLabel}:
                             </span>
-                            <span className="rate-card__value rate-card__value--five">
-                                {displayRates[5].toFixed(2)}
-                                %
+                            <span className="currency-display__value">
+                                {currency.toLocaleString()}
                             </span>
-                        </div>
-                        <div className="rate-card">
-                            <span className="rate-card__label">
-                                6★ Rate
-                            </span>
-                            <span
-                                className={`rate-card__value ${getPityTierClass(
-                                    currentPity
-                                )} rate-card__value--six`}
-                            >
-                                {currentSixRatePercent}%
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="gacha-stat-panel">
-                        <div className="stat-grid__row">
-                            <span className="stat-grid__label">
-                                Total pulls spent:
-                            </span>
-                            <span className="stat-grid__value">
-                                {totalPulls} ={" "}
-                                {spentCurrency.toLocaleString()}{" "}
-                                {currencyLabelPlural}
-                            </span>
-                        </div>
-                        <div className="stat-grid__row stat-grid__row--split">
-                            <span className="stat-grid__label">
-                                Current pity:{" "}
-                                <strong>
-                                    {currentPity}
-                                </strong>
-                            </span>
-                            <span className="stat-grid__label">
-                                Average pity:{" "}
-                                <strong>
-                                    {formatPityMetric(
-                                        averagePity,
-                                        averageProbability
-                                    )}
-                                </strong>
-                            </span>
-                        </div>
-                        <div className="stat-grid__row stat-grid__row--split">
-                            <span className="stat-grid__label">
-                                Lowest pity:{" "}
-                                <strong>
-                                    {formatPityMetric(
-                                        minPity,
-                                        lowestProbability
-                                    )}
-                                </strong>
-                            </span>
-                            <span className="stat-grid__label">
-                                Highest pity:{" "}
-                                <strong>
-                                    {formatPityMetric(
-                                        maxPity,
-                                        highestProbability
-                                    )}
-                                </strong>
-                            </span>
-                        </div>
-                    </div>
-                    <div className="gacha-buttons">
-                        <div className="auto-control">
-                            <input
-                                type="number"
-                                min="50"
-                                step="50"
-                                className="auto-control__input"
-                                value={autoIntervalMs}
-                                onChange={(e) =>
-                                    setAutoIntervalMs(
-                                        e.target.value
-                                    )
-                                }
-                                disabled={isAutoPulling}
-                            />
-                            <button
-                                type="button"
-                                className={`gacha-button auto-control__button${
-                                    isAutoPulling
-                                        ? " is-active"
-                                        : ""
-                                }`}
-                                onClick={
-                                    handleToggleAutoPull
-                                }
-                            >
-                                {isAutoPulling
-                                    ? "Stop Auto"
-                                    : "Auto"}
-                            </button>
-                        </div>
-
-                        <div className="pull-buttons">
                             {isCharacter && (
                                 <button
                                     type="button"
-                                    className="gacha-button"
+                                    className="currency-display__add"
                                     onClick={() =>
-                                        handlePull(1)
+                                        setShowConvertTooltip(
+                                            !showConvertTooltip
+                                        )
                                     }
-                                    disabled={
-                                        !canPullSingle ||
-                                        isAutoPulling
-                                    }
+                                    title="Đổi Origeometry sang Oroberyls"
                                 >
-                                    Pull x1 (
-                                    {costs.character.single.toLocaleString()}
-                                    )
+                                    +
                                 </button>
                             )}
-                            <button
-                                type="button"
-                                className="gacha-button gacha-button--accent"
-                                onClick={() =>
-                                    handlePull(
-                                        isCharacter
-                                            ? 10
-                                            : 10
+                            {isCharacter && (
+                                <OrigeometryConvert
+                                    isOpen={
+                                        showConvertTooltip
+                                    }
+                                    onClose={() =>
+                                        setShowConvertTooltip(
+                                            false
+                                        )
+                                    }
+                                    wallet={wallet}
+                                    onExchange={
+                                        handleConvertOrigeometry
+                                    }
+                                />
+                            )}
+                        </div>
+                    </div>
+                </div>
+
+                <div className="gacha-display">
+                    {results.length === 0 ? (
+                        <div className="gacha-empty">
+                            Chưa có kết quả. Thử gacha nhé?
+                        </div>
+                    ) : (
+                        <div className="gacha-results">
+                            {results.map((result) => (
+                                <ResultCard
+                                    key={result.id}
+                                    rarity={result.rarity}
+                                    order={result.order}
+                                    win={result.win}
+                                />
+                            ))}
+                        </div>
+                    )}
+                </div>
+
+                <div className="gacha-controls">
+                    <div className="gacha-controls__body">
+                        <div className="gacha-rate-panel">
+                            <div className="rate-card">
+                                <span className="rate-card__label rate-card__label--five">
+                                    5★ Rate
+                                </span>
+                                <span className="rate-card__value rate-card__value--five">
+                                    {displayRates[5].toFixed(
+                                        2
+                                    )}
+                                    %
+                                </span>
+                            </div>
+                            <div className="rate-card">
+                                <span className="rate-card__label">
+                                    6★ Rate
+                                </span>
+                                <span
+                                    className={`rate-card__value ${getPityTierClass(
+                                        currentPity
+                                    )} rate-card__value--six`}
+                                >
+                                    {currentSixRatePercent}%
+                                </span>
+                            </div>
+                        </div>
+
+                        <div className="gacha-stat-panel">
+                            <div className="stat-grid__row">
+                                <span className="stat-grid__label">
+                                    Total pulls spent:
+                                </span>
+                                <span className="stat-grid__value">
+                                    {totalPulls} ={" "}
+                                    {spentCurrency.toLocaleString()}{" "}
+                                    {currencyLabelPlural}
+                                </span>
+                            </div>
+                            <div className="stat-grid__row stat-grid__row--split">
+                                <span className="stat-grid__label">
+                                    Current pity:{" "}
+                                    <strong>
+                                        {currentPity}
+                                    </strong>
+                                </span>
+                                <span className="stat-grid__label">
+                                    Average pity:{" "}
+                                    <strong>
+                                        {formatPityMetric(
+                                            averagePity,
+                                            averageProbability
+                                        )}
+                                    </strong>
+                                </span>
+                            </div>
+                            <div className="stat-grid__row stat-grid__row--split">
+                                <span className="stat-grid__label">
+                                    Lowest pity:{" "}
+                                    <strong>
+                                        {formatPityMetric(
+                                            minPity,
+                                            lowestProbability
+                                        )}
+                                    </strong>
+                                </span>
+                                <span className="stat-grid__label">
+                                    Highest pity:{" "}
+                                    <strong>
+                                        {formatPityMetric(
+                                            maxPity,
+                                            highestProbability
+                                        )}
+                                    </strong>
+                                </span>
+                            </div>
+                        </div>
+                        <div className="gacha-buttons">
+                            <div className="auto-control">
+                                <input
+                                    type="number"
+                                    min="50"
+                                    step="50"
+                                    className="auto-control__input"
+                                    value={autoIntervalMs}
+                                    onChange={(e) =>
+                                        setAutoIntervalMs(
+                                            e.target.value
+                                        )
+                                    }
+                                    disabled={isAutoPulling}
+                                />
+                                <button
+                                    type="button"
+                                    className={`gacha-button auto-control__button${
+                                        isAutoPulling
+                                            ? " is-active"
+                                            : ""
+                                    }`}
+                                    onClick={
+                                        handleToggleAutoPull
+                                    }
+                                >
+                                    {isAutoPulling
+                                        ? "Stop Auto"
+                                        : "Auto"}
+                                </button>
+                            </div>
+
+                            <div className="pull-buttons">
+                                {isCharacter && (
+                                    <button
+                                        type="button"
+                                        className="gacha-button"
+                                        onClick={() =>
+                                            handlePull(1)
+                                        }
+                                        disabled={
+                                            !canPullSingle ||
+                                            isAutoPulling
+                                        }
+                                    >
+                                        Pull x1 (
+                                        {costs.character.single.toLocaleString()}
+                                        )
+                                    </button>
+                                )}
+                                <button
+                                    type="button"
+                                    className="gacha-button gacha-button--accent"
+                                    onClick={() =>
+                                        handlePull(
+                                            isCharacter
+                                                ? 10
+                                                : 10
+                                        )
+                                    }
+                                    disabled={!canPullMulti}
+                                >
+                                    Pull x10 (
+                                    {isCharacter
+                                        ? costs.character.multi.toLocaleString()
+                                        : costs.weapon.multi.toLocaleString()}
                                     )
-                                }
-                                disabled={!canPullMulti}
-                            >
-                                Pull x10 (
-                                {isCharacter
-                                    ? costs.character.multi.toLocaleString()
-                                    : costs.weapon.multi.toLocaleString()}
-                                )
-                            </button>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <PaymentDrawer
+                isOpen={isPaymentOpen}
+                onClose={() => setIsPaymentOpen(false)}
+                wallet={wallet}
+                currency={walletCurrency}
+                onCurrencyChange={setWalletCurrency}
+                formatDisplay={formatDisplay}
+                selectedBundleId={selectedBundleId}
+                onSelectBundle={setSelectedBundleId}
+                onTopUp={handleTopUpBalance}
+                onCheckout={handleCheckout}
+                convertToCny={convertToCny}
+                isRateLoading={isRateLoading}
+            />
+        </>
     );
 }
 

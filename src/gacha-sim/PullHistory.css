@@ -1,7 +1,7 @@
 .pull-history-tooltip {
     position: absolute;
     top: 100%;
-    right: calc(-260px + 24px);
+    right: calc(-520px + 24px);
     margin-top: 32px;
     z-index: 1000;
     width: calc(100vw - 260px - 32px);
@@ -286,11 +286,7 @@
 
 @media (max-width: 1200px) {
     .pull-history-tooltip {
-        width: calc(100vw - 230px - 24px);
-    }
-
-    .pull-history-stats {
-        width: 200px;
+        width: calc(100vw - 240px - 24px);
     }
 }
 

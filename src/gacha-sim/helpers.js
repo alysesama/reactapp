@@ -1,3 +1,10 @@
+import {
+    addOroberylsToWallet,
+    createDefaultWallet,
+    hydrateWallet,
+    spendOroberyls,
+} from "./wallet";
+
 const STORAGE_KEY = "gacha_sim";
 
 // Character pool rates
@@ -25,46 +32,59 @@ const CHAR_REWARDS = {
 // Weapon pool costs
 const WEAPON_COST = 1980; // arsenal_token per 10 pulls
 
-// Default statistics structure
-const DEFAULT_STATS = {
-    character: {
-        oroberyl: 10000,
-        pull_count: 0,
-        pity: 0,
-        hard_pity_available: true,
-        pull_history: [],
-    },
-    weapon: {
-        arsenal_token: 0,
-        pull_count: 0,
-        pity: 0,
-        pull_history: [],
-    },
+const DEFAULT_CHARACTER_STATS = {
+    oroberyl: 0,
+    pull_count: 0,
+    pity: 0,
+    hard_pity_available: true,
+    pull_history: [],
 };
+
+const DEFAULT_WEAPON_STATS = {
+    arsenal_token: 0,
+    pull_count: 0,
+    pity: 0,
+    pull_history: [],
+};
+
+const createDefaultStats = () => ({
+    character: { ...DEFAULT_CHARACTER_STATS },
+    weapon: { ...DEFAULT_WEAPON_STATS },
+    wallet: createDefaultWallet(),
+});
 
 // Load statistics from localStorage
 export const loadStats = () => {
-    if (typeof window === "undefined") return DEFAULT_STATS;
+    if (typeof window === "undefined")
+        return createDefaultStats();
     try {
         const raw =
             window.localStorage.getItem(STORAGE_KEY);
         if (raw) {
             const parsed = JSON.parse(raw);
-            // Deep merge with defaults to ensure all fields exist
+            const wallet = parsed.wallet
+                ? hydrateWallet(parsed.wallet)
+                : {
+                      ...createDefaultWallet(),
+                      oroberyls:
+                          parsed.character?.oroberyl ?? 0,
+                  };
             return {
                 character: {
-                    ...DEFAULT_STATS.character,
+                    ...DEFAULT_CHARACTER_STATS,
                     ...(parsed.character || {}),
+                    oroberyl: wallet.oroberyls,
                     pull_history:
                         parsed.character?.pull_history ||
                         [],
                 },
                 weapon: {
-                    ...DEFAULT_STATS.weapon,
+                    ...DEFAULT_WEAPON_STATS,
                     ...(parsed.weapon || {}),
                     pull_history:
                         parsed.weapon?.pull_history || [],
                 },
+                wallet,
             };
         }
     } catch (error) {
@@ -73,14 +93,13 @@ export const loadStats = () => {
             error
         );
     }
-    return DEFAULT_STATS;
+    return createDefaultStats();
 };
 
 // Save statistics to localStorage
 export const saveStats = (stats) => {
     if (typeof window === "undefined") return;
     try {
-        // Ensure we have valid stats structure
         const statsToSave = {
             character: {
                 oroberyl: stats.character?.oroberyl ?? 0,
@@ -107,6 +126,7 @@ export const saveStats = (stats) => {
                     ? stats.weapon.pull_history
                     : [],
             },
+            wallet: stats.wallet || createDefaultWallet(),
         };
         window.localStorage.setItem(
             STORAGE_KEY,
@@ -255,9 +275,13 @@ export const rollGacha = (poolType, pulls, stats) => {
     // Validate currency
     if (isCharacter) {
         const cost = CHAR_COST * pulls;
-        if (stats.character.oroberyl < cost) {
+        const available =
+            stats.wallet?.oroberyls ??
+            stats.character?.oroberyl ??
+            0;
+        if (available < cost) {
             throw new Error(
-                `Không đủ oroberyl. Cần ${cost}, hiện có ${stats.character.oroberyl}`
+                `Không đủ oroberyl. Cần ${cost}, hiện có ${available}`
             );
         }
     } else {
@@ -270,8 +294,8 @@ export const rollGacha = (poolType, pulls, stats) => {
 
     // Ensure pool stats exist with all required fields
     const defaultPoolStats = isCharacter
-        ? DEFAULT_STATS.character
-        : DEFAULT_STATS.weapon;
+        ? DEFAULT_CHARACTER_STATS
+        : DEFAULT_WEAPON_STATS;
     const poolStats = {
         ...defaultPoolStats,
         ...(stats[poolType] || {}),
@@ -283,7 +307,11 @@ export const rollGacha = (poolType, pulls, stats) => {
     let updatedStats = {
         character: { ...stats.character },
         weapon: { ...stats.weapon },
+        wallet: stats.wallet
+            ? { ...stats.wallet }
+            : createDefaultWallet(),
     };
+    let updatedWallet = { ...updatedStats.wallet };
     let updatedPoolStats = { ...poolStats };
 
     // Process each pull
@@ -339,15 +367,10 @@ export const rollGacha = (poolType, pulls, stats) => {
 
         // Update currency - ensure we're working with numbers
         if (isCharacter) {
-            const currentOroberyl =
-                updatedStats.character.oroberyl || 0;
-            updatedStats.character = {
-                ...updatedStats.character,
-                oroberyl: Math.max(
-                    0,
-                    currentOroberyl - CHAR_COST
-                ),
-            };
+            updatedWallet = spendOroberyls(
+                updatedWallet,
+                CHAR_COST
+            );
             // Add arsenal token reward
             const currentTokens =
                 updatedStats.weapon.arsenal_token || 0;
@@ -384,7 +407,7 @@ export const rollGacha = (poolType, pulls, stats) => {
         if (isCharacter) {
             updatedStats.character = {
                 ...updatedPoolStats,
-                oroberyl: updatedStats.character.oroberyl, // Preserve currency
+                oroberyl: updatedWallet.oroberyls,
             };
         } else {
             updatedStats.weapon = {
@@ -395,6 +418,10 @@ export const rollGacha = (poolType, pulls, stats) => {
         }
     }
 
+    updatedStats.wallet = {
+        ...updatedWallet,
+    };
+
     // Note: Guarantee result (character only, every 240 pulls) is handled separately
     // and not included in roll results as it's a free reward
 
@@ -403,31 +430,31 @@ export const rollGacha = (poolType, pulls, stats) => {
 
 // Add oroberyl
 export const addOroberyl = (amount, stats) => {
-    const updated = { ...stats };
-    updated.character.oroberyl =
-        (updated.character.oroberyl || 0) + amount;
-    return updated;
+    const wallet = stats.wallet
+        ? { ...stats.wallet }
+        : createDefaultWallet();
+    const nextWallet = addOroberylsToWallet(wallet, amount);
+    return {
+        ...stats,
+        wallet: nextWallet,
+        character: {
+            ...stats.character,
+            oroberyl: nextWallet.oroberyls,
+        },
+    };
 };
 
 // Reset pool statistics to default
 export const resetPoolStats = (poolType, stats) => {
     const updated = { ...stats };
     if (poolType === "character") {
-        // Reset all character stats including pull_history and currency
         updated.character = {
-            oroberyl: 0,
-            pull_count: 0,
-            pity: 0,
-            hard_pity_available: true,
-            pull_history: [],
+            ...DEFAULT_CHARACTER_STATS,
+            oroberyl: updated.wallet?.oroberyls ?? 0,
         };
     } else {
-        // Reset all weapon stats including pull_history and currency
         updated.weapon = {
-            arsenal_token: 0,
-            pull_count: 0,
-            pity: 0,
-            pull_history: [],
+            ...DEFAULT_WEAPON_STATS,
         };
     }
     return updated;

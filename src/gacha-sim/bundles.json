@@ -1,0 +1,51 @@
+[
+    {
+        "id": "bundle_1",
+        "name": "Novice Starter",
+        "price_cny": 6,
+        "return_fixed": { "origeometry": 2 },
+        "return_first_bonus": { "origeometry": 4 },
+        "return_bonus": { "origeometry": 1 }
+    },
+    {
+        "id": "bundle_2",
+        "name": "Elite Booster",
+        "price_cny": 30,
+        "return_fixed": { "origeometry": 12 },
+        "return_first_bonus": { "origeometry": 12 },
+        "return_bonus": { "origeometry": 3 }
+    },
+    {
+        "id": "bundle_3",
+        "name": "Veteran Arsenal",
+        "price_cny": 98,
+        "return_fixed": { "origeometry": 42 },
+        "return_first_bonus": { "origeometry": 42 },
+        "return_bonus": { "origeometry": 8 }
+    },
+    {
+        "id": "bundle_4",
+        "name": "Tactician Reserve",
+        "price_cny": 198,
+        "return_fixed": { "origeometry": 85 },
+        "return_first_bonus": { "origeometry": 85 },
+        "return_bonus": { "origeometry": 17 }
+    },
+    {
+        "id": "bundle_5",
+        "name": "Strategist Vault",
+        "price_cny": 328,
+        "return_fixed": { "origeometry": 141 },
+        "return_first_bonus": { "origeometry": 141 },
+        "return_bonus": { "origeometry": 30 }
+    },
+    {
+        "id": "bundle_6",
+        "name": "Architect Treasury",
+        "price_cny": 648,
+        "return_fixed": { "origeometry": 280 },
+        "return_first_bonus": { "origeometry": 280 },
+        "return_bonus": { "origeometry": 70 }
+    }
+]
+
