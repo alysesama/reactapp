@@ -5,8 +5,21 @@ const DEFAULT_API_BASE_URL =
     "http://localhost:4000";
 
 const PUBLIC_ASSET_BASE = process.env.PUBLIC_URL ?? "";
+const LOCAL_WEAPONS_JSON = `${PUBLIC_ASSET_BASE}/valorant_assets/valorant_weapons.json`;
 
 let indexedWeapons = null;
+
+function mapLocalWeapon(entry) {
+    const parts = entry.wp_id.split("_");
+    const [category, ...rest] = parts;
+    return {
+        id: entry.wp_id,
+        name: entry.wp_name,
+        rarity: entry.rarity,
+        category,
+        imageSlug: rest.join("_"),
+    };
+}
 
 function toWeaponWithImage(weapon) {
     const fileName = `${weapon.imageSlug}.png`;
@@ -28,10 +41,17 @@ function buildIndex(rawWeapons) {
     return index;
 }
 
-async function ensureWeaponsLoaded() {
-    if (indexedWeapons) {
-        return;
+async function loadWeaponsFromLocal() {
+    const response = await fetch(LOCAL_WEAPONS_JSON);
+    if (!response.ok) {
+        throw new Error("Không thể load weapon JSON tĩnh");
     }
+    const data = await response.json();
+    const mapped = data.map(mapLocalWeapon);
+    indexedWeapons = buildIndex(mapped);
+}
+
+async function loadWeaponsFromApi() {
     const endpoint = `${DEFAULT_API_BASE_URL}/api/valorant/weapons`;
     const response = await fetch(endpoint);
     if (!response.ok) {
@@ -41,6 +61,24 @@ async function ensureWeaponsLoaded() {
     }
     const data = await response.json();
     indexedWeapons = buildIndex(data);
+}
+
+async function ensureWeaponsLoaded() {
+    if (indexedWeapons) {
+        return;
+    }
+    let lastError = null;
+    try {
+        await loadWeaponsFromLocal();
+        return;
+    } catch (error) {
+        lastError = error;
+    }
+    try {
+        await loadWeaponsFromApi();
+    } catch (error) {
+        throw lastError ?? error;
+    }
 }
 
 function pickRandomWeapon(candidates) {

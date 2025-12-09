@@ -1,0 +1,5932 @@
+[
+    {
+        "rarity": 4,
+        "wp_id": "ares_singularity_ares",
+        "wp_name": "Singularity Ares"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "ares_sentinels_of_light_ares",
+        "wp_name": "Sentinels of Light Ares"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ares_valorant_go_vol_2_ares",
+        "wp_name": "VALORANT GO! Vol. 2 Ares"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ares_gaias_vengeance_ares",
+        "wp_name": "Gaia's Vengeance Ares"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ares_nebula_ares",
+        "wp_name": "Nebula Ares"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ares_doodle_buds_ares",
+        "wp_name": "Doodle Buds Ares"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ares_celestial_ares",
+        "wp_name": "Celestial Ares"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ares_magepunk_ares",
+        "wp_name": "Magepunk Ares"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ares_valiant_hero_ares",
+        "wp_name": "Valiant Hero Ares"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ares_ion_ares",
+        "wp_name": "Ion Ares"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ares_oni_ares",
+        "wp_name": "Oni Ares"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ares_aristocrat_ares",
+        "wp_name": "Aristocrat Ares"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ares_prism_ares",
+        "wp_name": "Prism Ares"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ares_nunca_olvidados_ares",
+        "wp_name": "Nunca Olvidados Ares"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ares_minima_ares",
+        "wp_name": "Minima Ares"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ares_sakura_ares",
+        "wp_name": "Sakura Ares"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ares_snowfall_ares",
+        "wp_name": "Snowfall Ares"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ares_titanmail_ares",
+        "wp_name": "Titanmail Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_endeavour_ares",
+        "wp_name": "Endeavour Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_rush_ares",
+        "wp_name": "Rush Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_infantry_ares",
+        "wp_name": "Infantry Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_space_piercer_ares",
+        "wp_name": "Space Piercer Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_bumble_brigade_ares",
+        "wp_name": "Bumble Brigade Ares"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ares_hivemind_ares",
+        "wp_name": "Hivemind Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_spitfire_ares",
+        "wp_name": "Spitfire Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_digihex_ares",
+        "wp_name": "Digihex Ares"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ares_hieroscape_ares",
+        "wp_name": "Hieroscape Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_goldwing_ares",
+        "wp_name": "Goldwing Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_outpost_ares",
+        "wp_name": "Outpost Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_aquatica_ares",
+        "wp_name": "Aquatica Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_yoonseul_ares",
+        "wp_name": "Yoonseul Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_monstrocity_ares",
+        "wp_name": "Monstrocity Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_9_lives_ares",
+        "wp_name": "9 Lives Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_polyfrog_ares",
+        "wp_name": "POLYfrog Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_divine_swine_ares",
+        "wp_name": "Divine Swine Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_jigsaw_ares",
+        "wp_name": "Jigsaw Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_premiere_collision_ares",
+        "wp_name": "Premiere Collision Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_silhouette_ares",
+        "wp_name": "Silhouette Ares"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "ares_mystbloom_ares",
+        "wp_name": "Mystbloom Ares"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ares_haloform_ares",
+        "wp_name": "Haloform Ares"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "bucky_overdrive_bucky",
+        "wp_name": "Overdrive Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bucky_xenohunter_bucky",
+        "wp_name": "Xenohunter Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bucky_gaias_vengeance_bucky",
+        "wp_name": "Gaia's Vengeance Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bucky_origin_bucky",
+        "wp_name": "Origin Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bucky_radiant_crisis_001_bucky",
+        "wp_name": "Radiant Crisis 001 Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bucky_prime20_bucky",
+        "wp_name": "Prime//2.0 Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bucky_aemondir_bucky",
+        "wp_name": "Aemondir Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bucky_magepunk_bucky",
+        "wp_name": "Magepunk Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bucky_ion_bucky",
+        "wp_name": "Ion Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bucky_oni_bucky",
+        "wp_name": "Oni Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bucky_gravitational_uranium_neuroblaster_bucky",
+        "wp_name": "Gravitational Uranium Neuroblaster\n                    Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bucky_altitude_bucky",
+        "wp_name": "Altitude Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bucky_horizon_bucky",
+        "wp_name": "Horizon Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bucky_titanmail_bucky",
+        "wp_name": "Titanmail Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bucky_wasteland_bucky",
+        "wp_name": "Wasteland Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_prism_ii_bucky",
+        "wp_name": "Prism II Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_smite_bucky",
+        "wp_name": "Smite Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_galleria_bucky",
+        "wp_name": "Galleria Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_frequency_bucky",
+        "wp_name": "Frequency Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bucky_piedra_del_sol_bucky",
+        "wp_name": "Piedra del Sol Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_bulletbox_bucky",
+        "wp_name": "Bulletbox Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_red_alert_bucky",
+        "wp_name": "Red Alert Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_surge_bucky",
+        "wp_name": "Surge Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_topotek_bucky",
+        "wp_name": "Topotek Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_moon_scout_bucky",
+        "wp_name": "Moon Scout Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bucky_sys_bucky",
+        "wp_name": ".SYS Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_monarch_bucky",
+        "wp_name": "Monarch Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_hydrodip_bucky",
+        "wp_name": "Hydrodip Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_retrowave_bucky",
+        "wp_name": "Retrowave Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bucky_kingdom_bucky",
+        "wp_name": "Kingdom Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bucky_iridian_thorn_bucky",
+        "wp_name": "Iridian Thorn Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bucky_genesis_bucky",
+        "wp_name": "Genesis Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_belaflaire_bucky",
+        "wp_name": "Belaflaire Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bucky_artisan_bucky",
+        "wp_name": "Artisan Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_panoramic_bucky",
+        "wp_name": "Panoramic Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_lightwave_bucky",
+        "wp_name": "Lightwave Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bucky_cavalier_bucky",
+        "wp_name": "Cavalier Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_spellbound_bucky",
+        "wp_name": "Spellbound Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bucky_aerosol_bucky",
+        "wp_name": "Aerosol Bucky"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "bulldog_radiant_entertainment_system_bulldog",
+        "wp_name": "Radiant Entertainment System\n                    Bulldog"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "bulldog_spectrum_bulldog",
+        "wp_name": "Spectrum Bulldog"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "bulldog_phaseguard_bulldog",
+        "wp_name": "Phaseguard Bulldog"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "bulldog_protocol_781a_bulldog",
+        "wp_name": "Protocol 781-A Bulldog"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "bulldog_araxys_bulldog",
+        "wp_name": "Araxys Bulldog"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "bulldog_nocturnum_bulldog",
+        "wp_name": "Nocturnum Bulldog"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "bulldog_glitchpop_bulldog",
+        "wp_name": "Glitchpop Bulldog"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "bulldog_prelude_to_chaos_bulldog",
+        "wp_name": "Prelude to Chaos Bulldog"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bulldog_neptune_bulldog",
+        "wp_name": "Neptune Bulldog"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bulldog_undercity_bulldog",
+        "wp_name": "Undercity Bulldog"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bulldog_blackmarket_bulldog",
+        "wp_name": "Black.Market Bulldog"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bulldog_aemondir_bulldog",
+        "wp_name": "Aemondir Bulldog"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bulldog_oni_bulldog",
+        "wp_name": "Oni Bulldog"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "bulldog_cryostasis_bulldog",
+        "wp_name": "Cryostasis Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_aristocrat_bulldog",
+        "wp_name": "Aristocrat Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_aperture_bulldog",
+        "wp_name": "Aperture Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_emberclad_bulldog",
+        "wp_name": "Emberclad Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_chromedek_bulldog",
+        "wp_name": "Chromedek Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_horizon_bulldog",
+        "wp_name": "Horizon Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_nunca_olvidados_bulldog",
+        "wp_name": "Nunca Olvidados Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_minima_bulldog",
+        "wp_name": "Minima Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_combat_crafts_bulldog",
+        "wp_name": "Combat Crafts Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_no_limits_bulldog",
+        "wp_name": "NO LIMITS Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_holomoku_bulldog",
+        "wp_name": "Holomoku Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_wasteland_bulldog",
+        "wp_name": "Wasteland Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_endeavour_bulldog",
+        "wp_name": "Endeavour Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_rush_bulldog",
+        "wp_name": "Rush Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_rupture_bulldog",
+        "wp_name": "Rupture Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_convex_bulldog",
+        "wp_name": "Convex Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_frequency_bulldog",
+        "wp_name": "Frequency Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_bumble_brigade_bulldog",
+        "wp_name": "Bumble Brigade Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_heartbreaker_bulldog",
+        "wp_name": "Heartbreaker Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_tactiplay_bulldog",
+        "wp_name": "Tactiplay Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_striker_bulldog",
+        "wp_name": "Striker Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_rune_stone_bulldog",
+        "wp_name": "Rune Stone Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_bulletbox_bulldog",
+        "wp_name": "Bulletbox Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_velocity_bulldog",
+        "wp_name": "Velocity Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_shimmer_bulldog",
+        "wp_name": "Shimmer Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_digihex_bulldog",
+        "wp_name": "Digihex Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_hieroscape_bulldog",
+        "wp_name": "Hieroscape Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_bound_bulldog",
+        "wp_name": "Bound Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_retrowave_bulldog",
+        "wp_name": "Retrowave Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_ktac_bulldog",
+        "wp_name": "K/TAC Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_couture_bulldog",
+        "wp_name": "Couture Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_perch_bulldog",
+        "wp_name": "Perch Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_genesis_bulldog",
+        "wp_name": "Genesis Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_libretto_bulldog",
+        "wp_name": "Libretto Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_hue_shift_bulldog",
+        "wp_name": "Hue Shift Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_polyfox_bulldog",
+        "wp_name": "POLYfox Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_premiere_collision_bulldog",
+        "wp_name": "Premiere Collision Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_transition_bulldog",
+        "wp_name": "Transition Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_infinity_bulldog",
+        "wp_name": "Infinity Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_spellbound_bulldog",
+        "wp_name": "Spellbound Bulldog"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "bulldog_tilde_bulldog",
+        "wp_name": "Tilde Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_gridcrash_bulldog",
+        "wp_name": "Gridcrash Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_depths_bulldog",
+        "wp_name": "Depths Bulldog"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "bulldog_varnish_bulldog",
+        "wp_name": "Varnish Bulldog"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_spectrum_classic",
+        "wp_name": "Spectrum Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_rgx_11z_pro_classic",
+        "wp_name": "RGX 11z Pro Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_divergence_classic",
+        "wp_name": "Divergence Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_nocturnum_classic",
+        "wp_name": "Nocturnum Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_glitchpop_classic",
+        "wp_name": "Glitchpop Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_dolmirs_revenge_classic",
+        "wp_name": "Dolmir's Revenge Classic"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "classic_valorant_go_vol_2_classic",
+        "wp_name": "VALORANT GO! Vol. 2 Classic"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "classic_neptune_classic",
+        "wp_name": "Neptune Classic"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "classic_radiant_crisis_001_classic",
+        "wp_name": "Radiant Crisis 001 Classic"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "classic_undercity_classic",
+        "wp_name": "Undercity Classic"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "classic_forsaken_classic",
+        "wp_name": "Forsaken Classic"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "classic_prime_classic",
+        "wp_name": "Prime Classic"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "classic_blackmarket_classic",
+        "wp_name": "Black.Market Classic"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "classic_spline_classic",
+        "wp_name": "Spline Classic"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "classic_cryostasis_classic",
+        "wp_name": "Cryostasis Classic"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "classic_gravitational_uranium_neuroblaster_classic",
+        "wp_name": "Gravitational Uranium Neuroblaster\n                    Classic"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "classic_avalanche_classic",
+        "wp_name": "Avalanche Classic"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "classic_kohaku__matsuba_classic",
+        "wp_name": "Kohaku & Matsuba Classic"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "classic_sakura_classic",
+        "wp_name": "Sakura Classic"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "classic_snowfall_classic",
+        "wp_name": "Snowfall Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_intergrade_classic",
+        "wp_name": "Intergrade Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_smite_classic",
+        "wp_name": "Smite Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_daydreams_classic",
+        "wp_name": "Daydreams Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_galleria_classic",
+        "wp_name": "Galleria Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_switchback_classic",
+        "wp_name": "Switchback Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_reverie_classic",
+        "wp_name": "Reverie Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_storm_maw_classic",
+        "wp_name": "Storm Maw Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_resolution_classic",
+        "wp_name": "Resolution Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_steel_resolve_classic",
+        "wp_name": "Steel Resolve Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_fiber_optic_classic",
+        "wp_name": "Fiber Optic Classic"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "classic_atlas__cmd_classic",
+        "wp_name": "ATLAS // CMD Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_pistolinha_classic",
+        "wp_name": "Pistolinha Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_striker_classic",
+        "wp_name": "Striker Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_red_alert_classic",
+        "wp_name": "Red Alert Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_finesse_classic",
+        "wp_name": "Finesse Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_surge_classic",
+        "wp_name": "Surge Classic"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "classic_songsteel_classic",
+        "wp_name": "Songsteel Classic"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "classic_interhelm_classic",
+        "wp_name": "Interhelm Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_shimmer_classic",
+        "wp_name": "Shimmer Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_firearm_classic",
+        "wp_name": "FIRE/arm Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_goldwing_classic",
+        "wp_name": "Goldwing Classic"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "classic_bubble_pop_classic",
+        "wp_name": "Bubble Pop Classic"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "classic_bound_classic",
+        "wp_name": "Bound Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_prism_iii_classic",
+        "wp_name": "Prism III Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_yoonseul_classic",
+        "wp_name": "Yoonseul Classic"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "classic_kingdom_classic",
+        "wp_name": "Kingdom Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_tactiseries_classic",
+        "wp_name": "Tacti-Series Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_9_lives_classic",
+        "wp_name": "9 Lives Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_premiere_collision_classic",
+        "wp_name": "Premiere Collision Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_panoramic_classic",
+        "wp_name": "Panoramic Classic"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "classic_torque_classic",
+        "wp_name": "Torque Classic"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "classic_infinity_classic",
+        "wp_name": "Infinity Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_refractrix_classic",
+        "wp_name": "Refractrix Classic"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "classic_final_chamber_classic",
+        "wp_name": "Final Chamber Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_100t_classic",
+        "wp_name": "VCT x 100T Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_ag_classic",
+        "wp_name": "VCT x AG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_bbl_classic",
+        "wp_name": "VCT x BBL Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_bld_classic",
+        "wp_name": "VCT x BLD Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_blg_classic",
+        "wp_name": "VCT x BLG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_c9_classic",
+        "wp_name": "VCT x C9 Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_dfm_classic",
+        "wp_name": "VCT x DFM Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_drg_classic",
+        "wp_name": "VCT x DRG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_drx_classic",
+        "wp_name": "VCT x DRX Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_edg_classic",
+        "wp_name": "VCT x EDG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_eg_classic",
+        "wp_name": "VCT x EG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_fnc_classic",
+        "wp_name": "VCT x FNC Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_fpx_classic",
+        "wp_name": "VCT x FPX Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_fur_classic",
+        "wp_name": "VCT x FUR Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_fut_classic",
+        "wp_name": "VCT x FUT Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_g2_classic",
+        "wp_name": "VCT x G2 Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_gen_classic",
+        "wp_name": "VCT x GEN Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_ge_classic",
+        "wp_name": "VCT x GE Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_gx_classic",
+        "wp_name": "VCT x GX Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_jdg_classic",
+        "wp_name": "VCT x JDG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_kc_classic",
+        "wp_name": "VCT x KC Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_koi_classic",
+        "wp_name": "VCT x KOI Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_kr_classic",
+        "wp_name": "VCT x KRÜ Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_lev_classic",
+        "wp_name": "VCT x LEV Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_loud_classic",
+        "wp_name": "VCT x LOUD Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_m8_classic",
+        "wp_name": "VCT x M8 Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_mibr_classic",
+        "wp_name": "VCT x MIBR Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_navi_classic",
+        "wp_name": "VCT x NAVI Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_nova_classic",
+        "wp_name": "VCT x NOVA Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_nrg_classic",
+        "wp_name": "VCT x NRG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_prx_classic",
+        "wp_name": "VCT x PRX Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_rrq_classic",
+        "wp_name": "VCT x RRQ Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_sen_classic",
+        "wp_name": "VCT x SEN Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_t1_classic",
+        "wp_name": "VCT x T1 Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_te_classic",
+        "wp_name": "VCT x TE Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_tec_classic",
+        "wp_name": "VCT x TEC Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_th_classic",
+        "wp_name": "VCT x TH Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_tl_classic",
+        "wp_name": "VCT x TL Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_tln_classic",
+        "wp_name": "VCT x TLN Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_ts_classic",
+        "wp_name": "VCT x TS Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_tyl_classic",
+        "wp_name": "VCT x TYL Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_vit_classic",
+        "wp_name": "VCT x VIT Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_wol_classic",
+        "wp_name": "VCT x WOL Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct_x_zeta_classic",
+        "wp_name": "VCT x ZETA Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_100t_classic",
+        "wp_name": "VCT25 x 100T Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_2g_classic",
+        "wp_name": "VCT25 x 2G Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_ag_classic",
+        "wp_name": "VCT25 x AG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_apk_classic",
+        "wp_name": "VCT25 x APK Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_bbl_classic",
+        "wp_name": "VCT25 x BBL Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_blg_classic",
+        "wp_name": "VCT25 x BLG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_boom_classic",
+        "wp_name": "VCT25 x BOOM Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_c9_classic",
+        "wp_name": "VCT25 x C9 Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_dfm_classic",
+        "wp_name": "VCT25 x DFM Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_drg_classic",
+        "wp_name": "VCT25 x DRG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_drx_classic",
+        "wp_name": "VCT25 x DRX Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_edg_classic",
+        "wp_name": "VCT25 x EDG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_eg_classic",
+        "wp_name": "VCT25 x EG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_fnc_classic",
+        "wp_name": "VCT25 x FNC Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_fpx_classic",
+        "wp_name": "VCT25 x FPX Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_fur_classic",
+        "wp_name": "VCT25 x FUR Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_fut_classic",
+        "wp_name": "VCT25 x FUT Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_g2_classic",
+        "wp_name": "VCT25 x G2 Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_gen_classic",
+        "wp_name": "VCT25 x GEN Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_ge_classic",
+        "wp_name": "VCT25 x GE Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_gx_classic",
+        "wp_name": "VCT25 x GX Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_jdg_classic",
+        "wp_name": "VCT25 x JDG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_kc_classic",
+        "wp_name": "VCT25 x KC Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_koi_classic",
+        "wp_name": "VCT25 x KOI Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_kr_classic",
+        "wp_name": "VCT25 x KRÜ Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_lev_classic",
+        "wp_name": "VCT25 x LEV Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_loud_classic",
+        "wp_name": "VCT25 x LOUD Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_m8_classic",
+        "wp_name": "VCT25 x M8 Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_mibr_classic",
+        "wp_name": "VCT25 x MIBR Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_navi_classic",
+        "wp_name": "VCT25 x NAVI Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_nova_classic",
+        "wp_name": "VCT25 x NOVA Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_nrg_classic",
+        "wp_name": "VCT25 x NRG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_ns_classic",
+        "wp_name": "VCT25 x NS Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_prx_classic",
+        "wp_name": "VCT25 x PRX Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_rrq_classic",
+        "wp_name": "VCT25 x RRQ Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_sen_classic",
+        "wp_name": "VCT25 x SEN Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_t1_classic",
+        "wp_name": "VCT25 x T1 Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_te_classic",
+        "wp_name": "VCT25 x TE Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_tec_classic",
+        "wp_name": "VCT25 x TEC Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_th_classic",
+        "wp_name": "VCT25 x TH Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_tl_classic",
+        "wp_name": "VCT25 x TL Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_tln_classic",
+        "wp_name": "VCT25 x TLN Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_ts_classic",
+        "wp_name": "VCT25 x TS Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_tyl_classic",
+        "wp_name": "VCT25 x TYL Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_vit_classic",
+        "wp_name": "VCT25 x VIT Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_wol_classic",
+        "wp_name": "VCT25 x WOL Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_xlg_classic",
+        "wp_name": "VCT25 x XLG Classic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "classic_vct25_x_zeta_classic",
+        "wp_name": "VCT25 x ZETA Classic"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "frenzy_elderflame_frenzy",
+        "wp_name": "Elderflame Frenzy"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "frenzy_rgx_11z_pro_frenzy",
+        "wp_name": "RGX 11z Pro Frenzy"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "frenzy_glitchpop_frenzy",
+        "wp_name": "Glitchpop Frenzy"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "frenzy_blastx_frenzy",
+        "wp_name": "BlastX Frenzy"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "frenzy_xenohunter_frenzy",
+        "wp_name": "Xenohunter Frenzy"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "frenzy_bolt_frenzy",
+        "wp_name": "Bolt Frenzy"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "frenzy_origin_frenzy",
+        "wp_name": "Origin Frenzy"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "frenzy_prime20_frenzy",
+        "wp_name": "Prime//2.0 Frenzy"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "frenzy_celestial_frenzy",
+        "wp_name": "Celestial Frenzy"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "frenzy_ion_frenzy",
+        "wp_name": "Ion Frenzy"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "frenzy_oni_frenzy",
+        "wp_name": "Oni Frenzy"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "frenzy_sovereign_frenzy",
+        "wp_name": "Sovereign Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_emberclad_frenzy",
+        "wp_name": "Emberclad Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_nanomight_frenzy",
+        "wp_name": "Nanomight Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_sarmad_frenzy",
+        "wp_name": "Sarmad Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_team_ace_frenzy",
+        "wp_name": "Team Ace Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_horizon_frenzy",
+        "wp_name": "Horizon Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_nunca_olvidados_frenzy",
+        "wp_name": "Nunca Olvidados Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_combat_crafts_frenzy",
+        "wp_name": "Combat Crafts Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_orion_frenzy",
+        "wp_name": "Orion Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_titanmail_frenzy",
+        "wp_name": "Titanmail Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_holomoku_frenzy",
+        "wp_name": "Holomoku Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_rush_frenzy",
+        "wp_name": "Rush Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_sensation_frenzy",
+        "wp_name": "Sensation Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_wonderstallion_frenzy",
+        "wp_name": "Wonderstallion Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_task_force_809_frenzy",
+        "wp_name": "Task Force 809 Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_kaleidoscope_frenzy",
+        "wp_name": "Kaleidoscope Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_ragnarocker_frenzy",
+        "wp_name": "RagnaRocker Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_bulletbox_frenzy",
+        "wp_name": "Bulletbox Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_venturi_frenzy",
+        "wp_name": "Venturi Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_swooping_frenzy",
+        "wp_name": "Swooping Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_hieroscape_frenzy",
+        "wp_name": "Hieroscape Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_monarch_frenzy",
+        "wp_name": "Monarch Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_hydrodip_frenzy",
+        "wp_name": "Hydrodip Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_guardrail_frenzy",
+        "wp_name": "Guardrail Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_blush_frenzy",
+        "wp_name": "Blush Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_couture_frenzy",
+        "wp_name": "Couture Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_tactiseries_frenzy",
+        "wp_name": "Tacti-Series Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_coalition_cobra_frenzy",
+        "wp_name": "Coalition: Cobra Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_moondash_frenzy",
+        "wp_name": "Moondash Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_spitfire_frenzy",
+        "wp_name": "Spitfire Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_aero_frenzy",
+        "wp_name": "Aero Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_divine_swine_frenzy",
+        "wp_name": "Divine Swine Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_lightwave_frenzy",
+        "wp_name": "Lightwave Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_silhouette_frenzy",
+        "wp_name": "Silhouette Frenzy"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "frenzy_shellspire_frenzy",
+        "wp_name": "Shellspire Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_live_wire_frenzy",
+        "wp_name": "Live Wire Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_spellbound_frenzy",
+        "wp_name": "Spellbound Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_haloform_frenzy",
+        "wp_name": "Haloform Frenzy"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "frenzy_convergence_frenzy",
+        "wp_name": "Convergence Frenzy"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "ghost_radiant_entertainment_system_ghost",
+        "wp_name": "Radiant Entertainment System\n                    Ghost"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "ghost_phaseguard_ghost",
+        "wp_name": "Phaseguard Ghost"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "ghost_evori_dreamwings_ghost",
+        "wp_name": "Evori Dreamwings Ghost"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "ghost_singularity_ghost",
+        "wp_name": "Singularity Ghost"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "ghost_ruination_ghost",
+        "wp_name": "Ruination Ghost"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "ghost_cyrax_ghost",
+        "wp_name": "CYRAX Ghost"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ghost_valorant_go_vol_1_ghost",
+        "wp_name": "VALORANT GO! Vol. 1 Ghost"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ghost_gaias_vengeance_ghost",
+        "wp_name": "Gaia's Vengeance Ghost"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ghost_soulstrife_ghost",
+        "wp_name": "Soulstrife Ghost"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ghost_xerfang_ghost",
+        "wp_name": "XERØFANG Ghost"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ghost_magepunk_ghost",
+        "wp_name": "Magepunk Ghost"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ghost_valiant_hero_ghost",
+        "wp_name": "Valiant Hero Ghost"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ghost_reaver_ghost",
+        "wp_name": "Reaver Ghost"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ghost_sovereign_ghost",
+        "wp_name": "Sovereign Ghost"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ghost_tethered_realms_ghost",
+        "wp_name": "Tethered Realms Ghost"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ghost_recon_ghost",
+        "wp_name": "Recon Ghost"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "ghost_ego_ghost",
+        "wp_name": "Ego Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_valorant_go_vol_3_ghost",
+        "wp_name": "VALORANT GO! Vol. 3 Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_aperture_ghost",
+        "wp_name": "Aperture Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_prism_ghost",
+        "wp_name": "Prism Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_minima_ghost",
+        "wp_name": "Minima Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_luna_ghost",
+        "wp_name": "Luna Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_no_limits_ghost",
+        "wp_name": "NO LIMITS Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_winterwunderland_ghost",
+        "wp_name": "Winterwunderland Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_endeavour_ghost",
+        "wp_name": "Endeavour Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_infantry_ghost",
+        "wp_name": "Infantry Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_smite_ghost",
+        "wp_name": "Smite Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_luxe_ghost",
+        "wp_name": "Luxe Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_rupture_ghost",
+        "wp_name": "Rupture Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_fortunes_hand_ghost",
+        "wp_name": "Fortune's Hand Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_flutter_ghost",
+        "wp_name": "Flutter Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_fiber_optic_ghost",
+        "wp_name": "Fiber Optic Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_frequency_ghost",
+        "wp_name": "Frequency Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_celestia_ghost",
+        "wp_name": "Celestia Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_piedra_del_sol_ghost",
+        "wp_name": "Piedra del Sol Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_bumble_brigade_ghost",
+        "wp_name": "Bumble Brigade Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_tactitreat_ghost",
+        "wp_name": "Tacti-Treat Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_comet_ghost",
+        "wp_name": "Comet Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_starlit_odyssey_ghost",
+        "wp_name": "Starlit Odyssey Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_topotek_ghost",
+        "wp_name": "Topotek Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_spitfire_ghost",
+        "wp_name": "Spitfire Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_heartstopper_ghost",
+        "wp_name": "Heartstopper Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_exe_ghost",
+        "wp_name": ".EXE Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_hush_ghost",
+        "wp_name": "Hush Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_digihex_ghost",
+        "wp_name": "Digihex Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_goldwing_ghost",
+        "wp_name": "Goldwing Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_outpost_ghost",
+        "wp_name": "Outpost Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_serenity_ghost",
+        "wp_name": "Serenity Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_belaflaire_ghost",
+        "wp_name": "Belaflaire Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_libretto_ghost",
+        "wp_name": "Libretto Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_artisan_ghost",
+        "wp_name": "Artisan Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_jigsaw_ghost",
+        "wp_name": "Jigsaw Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_eclipse_ghost",
+        "wp_name": "Eclipse Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_lycans_bane_ghost",
+        "wp_name": "Lycan's Bane Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_byteshift_ghost",
+        "wp_name": "Byteshift Ghost"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "ghost_cavalier_ghost",
+        "wp_name": "Cavalier Ghost"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "ghost_mystbloom_ghost",
+        "wp_name": "Mystbloom Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_freehand_ghost",
+        "wp_name": "Freehand Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_gridcrash_ghost",
+        "wp_name": "Gridcrash Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_depths_ghost",
+        "wp_name": "Depths Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_vendetta_ghost",
+        "wp_name": "Vendetta Ghost"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "ghost_soul_silencer_ghost",
+        "wp_name": "Soul Silencer Ghost"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "guardian_spectrum_guardian",
+        "wp_name": "Spectrum Guardian"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "guardian_rgx_11z_pro_guardian",
+        "wp_name": "RGX 11z Pro Guardian"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "guardian_araxys_guardian",
+        "wp_name": "Araxys Guardian"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "guardian_dolmirs_revenge_guardian",
+        "wp_name": "Dolmir's Revenge Guardian"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "guardian_ruination_guardian",
+        "wp_name": "Ruination Guardian"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "guardian_cyrax_guardian",
+        "wp_name": "CYRAX Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_valorant_go_vol_1_guardian",
+        "wp_name": "VALORANT GO! Vol. 1 Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_neptune_guardian",
+        "wp_name": "Neptune Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_gaias_vengeance_guardian",
+        "wp_name": "Gaia's Vengeance Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_nebula_guardian",
+        "wp_name": "Nebula Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_soulstrife_guardian",
+        "wp_name": "Soulstrife Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_prime_guardian",
+        "wp_name": "Prime Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_magepunk_guardian",
+        "wp_name": "Magepunk Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_oni_guardian",
+        "wp_name": "Oni Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_reaver_guardian",
+        "wp_name": "Reaver Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_sovereign_guardian",
+        "wp_name": "Sovereign Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_tethered_realms_guardian",
+        "wp_name": "Tethered Realms Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_recon_guardian",
+        "wp_name": "Recon Guardian"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "guardian_ego_guardian",
+        "wp_name": "Ego Guardian"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "guardian_mkvii_liberty_guardian",
+        "wp_name": "MK.VII Liberty Guardian"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "guardian_abyssal_guardian",
+        "wp_name": "Abyssal Guardian"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "guardian_nanomight_guardian",
+        "wp_name": "Nanomight Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_intergrade_guardian",
+        "wp_name": "Intergrade Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_infantry_guardian",
+        "wp_name": "Infantry Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_galleria_guardian",
+        "wp_name": "Galleria Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_reverie_guardian",
+        "wp_name": "Reverie Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_fortunes_hand_guardian",
+        "wp_name": "Fortune's Hand Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_wonderstallion_guardian",
+        "wp_name": "Wonderstallion Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_immortalized_guardian",
+        "wp_name": "Immortalized Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_space_piercer_guardian",
+        "wp_name": "Space Piercer Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_tactitreat_guardian",
+        "wp_name": "Tacti-Treat Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_starlit_odyssey_guardian",
+        "wp_name": "Starlit Odyssey Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_bulletbox_guardian",
+        "wp_name": "Bulletbox Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_nitro_guardian",
+        "wp_name": "Nitro Guardian"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "guardian_songsteel_guardian",
+        "wp_name": "Songsteel Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_moon_scout_guardian",
+        "wp_name": "Moon Scout Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_spitfire_guardian",
+        "wp_name": "Spitfire Guardian"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "guardian_ruin_guardian",
+        "wp_name": "Ruin Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_hydrodip_guardian",
+        "wp_name": "Hydrodip Guardian"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "guardian_bubble_pop_guardian",
+        "wp_name": "Bubble Pop Guardian"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "guardian_guardrail_guardian",
+        "wp_name": "Guardrail Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_yoonseul_guardian",
+        "wp_name": "Yoonseul Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_blush_guardian",
+        "wp_name": "Blush Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_tactiseries_guardian",
+        "wp_name": "Tacti-Series Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_signature_guardian",
+        "wp_name": "Signature Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_moondash_guardian",
+        "wp_name": "Moondash Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_9_lives_guardian",
+        "wp_name": "9 Lives Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_aero_guardian",
+        "wp_name": "Aero Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_polyfox_guardian",
+        "wp_name": "POLYfox Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_jigsaw_guardian",
+        "wp_name": "Jigsaw Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_panoramic_guardian",
+        "wp_name": "Panoramic Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_silhouette_guardian",
+        "wp_name": "Silhouette Guardian"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "guardian_shellspire_guardian",
+        "wp_name": "Shellspire Guardian"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "guardian_infinity_guardian",
+        "wp_name": "Infinity Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_refractrix_guardian",
+        "wp_name": "Refractrix Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_heartseeker_guardian",
+        "wp_name": "Heartseeker Guardian"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "guardian_haloform_guardian",
+        "wp_name": "Haloform Guardian"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "judge_overdrive_bucky",
+        "wp_name": "Overdrive Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "judge_xenohunter_bucky",
+        "wp_name": "Xenohunter Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "judge_gaias_vengeance_bucky",
+        "wp_name": "Gaia's Vengeance Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "judge_origin_bucky",
+        "wp_name": "Origin Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "judge_radiant_crisis_001_bucky",
+        "wp_name": "Radiant Crisis 001 Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "judge_prime20_bucky",
+        "wp_name": "Prime//2.0 Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "judge_aemondir_bucky",
+        "wp_name": "Aemondir Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "judge_magepunk_bucky",
+        "wp_name": "Magepunk Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "judge_ion_bucky",
+        "wp_name": "Ion Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "judge_oni_bucky",
+        "wp_name": "Oni Bucky"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "judge_gravitational_uranium_neuroblaster_bucky",
+        "wp_name": "Gravitational Uranium Neuroblaster\n                    Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "judge_altitude_bucky",
+        "wp_name": "Altitude Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "judge_horizon_bucky",
+        "wp_name": "Horizon Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "judge_titanmail_bucky",
+        "wp_name": "Titanmail Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "judge_wasteland_bucky",
+        "wp_name": "Wasteland Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_prism_ii_bucky",
+        "wp_name": "Prism II Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_smite_bucky",
+        "wp_name": "Smite Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_galleria_bucky",
+        "wp_name": "Galleria Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_frequency_bucky",
+        "wp_name": "Frequency Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "judge_piedra_del_sol_bucky",
+        "wp_name": "Piedra del Sol Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_bulletbox_bucky",
+        "wp_name": "Bulletbox Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_red_alert_bucky",
+        "wp_name": "Red Alert Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_surge_bucky",
+        "wp_name": "Surge Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_topotek_bucky",
+        "wp_name": "Topotek Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_moon_scout_bucky",
+        "wp_name": "Moon Scout Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "judge_sys_bucky",
+        "wp_name": ".SYS Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_monarch_bucky",
+        "wp_name": "Monarch Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_hydrodip_bucky",
+        "wp_name": "Hydrodip Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_retrowave_bucky",
+        "wp_name": "Retrowave Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "judge_kingdom_bucky",
+        "wp_name": "Kingdom Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "judge_iridian_thorn_bucky",
+        "wp_name": "Iridian Thorn Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "judge_genesis_bucky",
+        "wp_name": "Genesis Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_belaflaire_bucky",
+        "wp_name": "Belaflaire Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "judge_artisan_bucky",
+        "wp_name": "Artisan Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_panoramic_bucky",
+        "wp_name": "Panoramic Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_lightwave_bucky",
+        "wp_name": "Lightwave Bucky"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "judge_cavalier_bucky",
+        "wp_name": "Cavalier Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_spellbound_bucky",
+        "wp_name": "Spellbound Bucky"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "judge_aerosol_bucky",
+        "wp_name": "Aerosol Bucky"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "marshal_kuronami_marshal",
+        "wp_name": "Kuronami Marshal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "marshal_nocturnum_marshal",
+        "wp_name": "Nocturnum Marshal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "marshal_neo_frontier_marshal",
+        "wp_name": "Neo Frontier Marshal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "marshal_gaias_vengeance_marshal",
+        "wp_name": "Gaia's Vengeance Marshal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "marshal_doodle_buds_marshal",
+        "wp_name": "Doodle Buds Marshal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "marshal_blackmarket_marshal",
+        "wp_name": "Black.Market Marshal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "marshal_magepunk_marshal",
+        "wp_name": "Magepunk Marshal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "marshal_crimsonbeast_marshal",
+        "wp_name": "Crimsonbeast Marshal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "marshal_sovereign_marshal",
+        "wp_name": "Sovereign Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_valorant_go_vol_3_marshal",
+        "wp_name": "VALORANT GO! Vol. 3 Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_chromedek_marshal",
+        "wp_name": "Chromedek Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_avalanche_marshal",
+        "wp_name": "Avalanche Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_minima_marshal",
+        "wp_name": "Minima Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_luna_marshal",
+        "wp_name": "Luna Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_wasteland_marshal",
+        "wp_name": "Wasteland Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_winterwunderland_marshal",
+        "wp_name": "Winterwunderland Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_galleria_marshal",
+        "wp_name": "Galleria Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_switchback_marshal",
+        "wp_name": "Switchback Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_rupture_marshal",
+        "wp_name": "Rupture Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_reverie_marshal",
+        "wp_name": "Reverie Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_task_force_809_marshal",
+        "wp_name": "Task Force 809 Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_fiber_optic_marshal",
+        "wp_name": "Fiber Optic Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_composite_marshal",
+        "wp_name": "Composite Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_rune_stone_marshal",
+        "wp_name": "Rune Stone Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_doom_wing_marshal",
+        "wp_name": "Doom Wing Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_songsteel_marshal",
+        "wp_name": "Songsteel Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_venturi_marshal",
+        "wp_name": "Venturi Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_interhelm_marshal",
+        "wp_name": "Interhelm Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_ruin_marshal",
+        "wp_name": "Ruin Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_monarch_marshal",
+        "wp_name": "Monarch Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_couture_marshal",
+        "wp_name": "Couture Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_tactiseries_marshal",
+        "wp_name": "Tacti-Series Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_perch_marshal",
+        "wp_name": "Perch Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_signature_marshal",
+        "wp_name": "Signature Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_coalition_cobra_marshal",
+        "wp_name": "Coalition: Cobra Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_moondash_marshal",
+        "wp_name": "Moondash Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_polyfrog_marshal",
+        "wp_name": "POLYfrog Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_divine_swine_marshal",
+        "wp_name": "Divine Swine Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_artisan_marshal",
+        "wp_name": "Artisan Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_premiere_collision_marshal",
+        "wp_name": "Premiere Collision Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_freehand_marshal",
+        "wp_name": "Freehand Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_spellbound_marshal",
+        "wp_name": "Spellbound Marshal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "marshal_sandswept_marshal",
+        "wp_name": "Sandswept Marshal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "marshal_convergence_marshal",
+        "wp_name": "Convergence Marshal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_power_fist",
+        "wp_name": "Power Fist"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_araxys_bioatomizers",
+        "wp_name": "Araxys Bio-Atomizers"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_waveform",
+        "wp_name": "Waveform"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_phaseguard_splitter",
+        "wp_name": "Phaseguard Splitter"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_nocturnum_scythe",
+        "wp_name": "Nocturnum Scythe"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_exo_edge",
+        "wp_name": "EX.O Edge"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_kuronami_no_yaiba",
+        "wp_name": "Kuronami no Yaiba"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_onimaru_kunitsuna",
+        "wp_name": "Onimaru Kunitsuna"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_cyrax_fanblade",
+        "wp_name": "CYRAX Fanblade"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_elderflame_dagger",
+        "wp_name": "Elderflame Dagger"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_ora_by_onetap_knife",
+        "wp_name": "ORA by OneTap Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_personal_administrative_melee_unit",
+        "wp_name": "Personal Administrative Melee\n                    Unit"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_evoris_spellcaster",
+        "wp_name": "Evori's Spellcaster"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_rgx_11z_pro_blade",
+        "wp_name": "RGX 11z Pro Blade"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_rgx_11z_pro_firefly",
+        "wp_name": "RGX 11z Pro Firefly"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_rgx_11z_pro_karambit",
+        "wp_name": "RGX 11z Pro Karambit"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_divergence_staff",
+        "wp_name": "Divergence Staff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_araxys_bio_harvester",
+        "wp_name": "Araxys Bio Harvester"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_bolt_knife",
+        "wp_name": "Bolt Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_doombringer_battleaxe",
+        "wp_name": "Doombringer Battleaxe"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_glitchpop_dagger",
+        "wp_name": "Glitchpop Dagger"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_glitchpop_axe",
+        "wp_name": "Glitchpop Axe"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_terminus_a_quo",
+        "wp_name": "Terminus A Quo"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_blade_of_chaos",
+        "wp_name": "Blade of Chaos"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_flail_of_chaos",
+        "wp_name": "Flail of Chaos"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_blades_of_imperium",
+        "wp_name": "Blades of Imperium"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_singularity_knife",
+        "wp_name": "Singularity Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_singularity_butterfly_knife",
+        "wp_name": "Singularity Butterfly Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_dolmirs_judgement",
+        "wp_name": "Dolmir's Judgement"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_neo_frontier_axe",
+        "wp_name": "Neo Frontier Axe"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_bubblegum_deathwish_chainsaw",
+        "wp_name": "Bubblegum Deathwish Chainsaw"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_blades_of_primordia",
+        "wp_name": "Blades of Primordia"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_xerfang_knife",
+        "wp_name": "XERØFANG Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_broken_blade_of_the_ruined_king",
+        "wp_name": "Broken Blade of the Ruined King"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_magepunk_sparkswitch",
+        "wp_name": "Magepunk Sparkswitch"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_ruyi_staff",
+        "wp_name": "Ruyi Staff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_overdrive_blade",
+        "wp_name": "Overdrive Blade"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_ion_karambit",
+        "wp_name": "Ion Karambit"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_helix_daggers",
+        "wp_name": "Helix Daggers"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_relic_of_the_sentinel",
+        "wp_name": "Relic of the Sentinel"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_relic_stone_daggers",
+        "wp_name": "Relic Stone Daggers"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_reaver_karambit",
+        "wp_name": "Reaver Karambit"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_eternal_sovereign",
+        "wp_name": "Eternal Sovereign"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_mystbloom_kunai",
+        "wp_name": "Mystbloom Kunai"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_blastx_polymer_knifetech_coated_knife",
+        "wp_name": "BlastX Polymer KnifeTech Coated\n                    Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_splashx_gloves",
+        "wp_name": "SplashX Gloves"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_xenohunter_knife",
+        "wp_name": "Xenohunter Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_valorant_go_vol_1_knife",
+        "wp_name": "VALORANT GO! Vol. 1 Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_yorus_stylish_butterfly_comb",
+        "wp_name": "Yoru's Stylish Butterfly Comb"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_neptune_anchor",
+        "wp_name": "Neptune Anchor"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_neptune_hook",
+        "wp_name": "Neptune Hook"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_gaias_wrath",
+        "wp_name": "Gaia's Wrath"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_gaias_fury",
+        "wp_name": "Gaia's Fury"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_origin_crescent_blade",
+        "wp_name": "Origin Crescent Blade"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_radiant_crisis_001_baseball_bat",
+        "wp_name": "Radiant Crisis 001 Baseball Bat"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_nebula_knife",
+        "wp_name": "Nebula Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_hack",
+        "wp_name": "Hack"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_forsaken_ritual_blade",
+        "wp_name": "Forsaken Ritual Blade"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_soulstrife_scythe",
+        "wp_name": "Soulstrife Scythe"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_prime_axe",
+        "wp_name": "Prime Axe"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_prime20_karambit",
+        "wp_name": "Prime//2.0 Karambit"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_blackmarket_butterfly_knife",
+        "wp_name": "Black.Market Butterfly Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_blade_of_aemondir",
+        "wp_name": "Blade of Aemondir"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_celestial_fan",
+        "wp_name": "Celestial Fan"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_magepunk_electroblade",
+        "wp_name": "Magepunk Electroblade"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_magepunk_shock_gauntlet",
+        "wp_name": "Magepunk Shock Gauntlet"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_spline_dagger",
+        "wp_name": "Spline Dagger"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_minima_karambit",
+        "wp_name": "Minima Karambit"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_crimsonbeast_hammer",
+        "wp_name": "Crimsonbeast Hammer"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_ion_energy_sword",
+        "wp_name": "Ion Energy Sword"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_oni_claw",
+        "wp_name": "Oni Claw"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_cryostasis_impact_drill",
+        "wp_name": "Cryostasis Impact Drill"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_lunas_descent",
+        "wp_name": "Luna's Descent"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_gravitational_uranium_neuroblaster_baton",
+        "wp_name": "Gravitational Uranium Neuroblaster\n                    Baton"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_reaver_knife",
+        "wp_name": "Reaver Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_sovereign_sword",
+        "wp_name": "Sovereign Sword"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_prosperity",
+        "wp_name": "Prosperity"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_recon_balisong",
+        "wp_name": "Recon Balisong"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_wonderstallion_hammer",
+        "wp_name": "Wonderstallion Hammer"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_ego_knife",
+        "wp_name": "Ego Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_altitude_knuckle_knife",
+        "wp_name": "Altitude Knuckle Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_valorant_go_vol_3_dagger",
+        "wp_name": "VALORANT GO! Vol. 3 Dagger"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_mkvii_liberty_combat_knife",
+        "wp_name": "MK.VII Liberty Combat Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_aperture_stiletto",
+        "wp_name": "Aperture Stiletto"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_emberclad_hammer",
+        "wp_name": "Emberclad Hammer"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_caeruleus",
+        "wp_name": "Caeruleus"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_nanomight_knuckles",
+        "wp_name": "Nanomight Knuckles"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_blade_of_serket",
+        "wp_name": "Blade of Serket"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_chromedek_gauntlet",
+        "wp_name": "Chromedek Gauntlet"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_prism_knife",
+        "wp_name": "Prism Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_equilibrium",
+        "wp_name": "Equilibrium"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_catrina",
+        "wp_name": "Catrina"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_combat_crafts_axe",
+        "wp_name": "Combat Crafts Axe"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_orion_sword",
+        "wp_name": "Orion Sword"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_snowfall_wand",
+        "wp_name": "Snowfall Wand"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_titanmail_mace",
+        "wp_name": "Titanmail Mace"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_hu_else",
+        "wp_name": "Hu Else"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_no_limits_bat",
+        "wp_name": "NO LIMITS Bat"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_kaimana",
+        "wp_name": "Kaimana"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_wasteland_crowbar",
+        "wp_name": "Wasteland Crowbar"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_winterwunderland_candy_cane",
+        "wp_name": "Winterwunderland Candy Cane"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_intergrade_blade",
+        "wp_name": "Intergrade Blade"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_smite_knife",
+        "wp_name": "Smite Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_smite_hammer",
+        "wp_name": "Smite Hammer"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_daydreams_crowbar",
+        "wp_name": "Daydreams Crowbar"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_luxe_knife",
+        "wp_name": "Luxe Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_switchback_ascender",
+        "wp_name": "Switchback Ascender"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_reverie_sword",
+        "wp_name": "Reverie Sword"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_fortunes_scepter",
+        "wp_name": "Fortune's Scepter"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_storm_maw_axe",
+        "wp_name": "Storm Maw Axe"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_task_force_809_knife",
+        "wp_name": "Task Force 809 Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_obsidiana",
+        "wp_name": "Obsidiana"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_composite_knife",
+        "wp_name": "Composite Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_atlas__cmd_baton",
+        "wp_name": "ATLAS // CMD Baton"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_overlay_dagger",
+        "wp_name": "Overlay Dagger"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_champions_2021_karambit",
+        "wp_name": "Champions 2021 Karambit"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_champions_2022_butterfly_knife",
+        "wp_name": "Champions 2022 Butterfly Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_champions_2023_kunai",
+        "wp_name": "Champions 2023 Kunai"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_champions_2024_blade",
+        "wp_name": "Champions 2024 Blade"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_striker_knife",
+        "wp_name": "Striker Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_comet_sword",
+        "wp_name": "Comet Sword"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_songsteel",
+        "wp_name": "Songsteel"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_vct_lockin_misericrdia",
+        "wp_name": "VCT LOCK//IN Misericórdia"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_hivemind_sword",
+        "wp_name": "Hivemind Sword"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_venturi_knife",
+        "wp_name": "Venturi Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_velocity_karambit",
+        "wp_name": "Velocity Karambit"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_heart_splitter",
+        "wp_name": "Heart Splitter"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_interhelm_sword",
+        "wp_name": "Interhelm Sword"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_ruin_dagger",
+        "wp_name": "Ruin Dagger"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_sys_melee",
+        "wp_name": ".SYS Melee"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_hieroscape_blades",
+        "wp_name": "Hieroscape Blades"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_bubble_pop_light_stick",
+        "wp_name": "Bubble Pop Light Stick"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_outpost_melee",
+        "wp_name": "Outpost Melee"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_guardrail_hammer",
+        "wp_name": "Guardrail Hammer"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_bound",
+        "wp_name": "Bound"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_prism_iii_axe",
+        "wp_name": "Prism III Axe"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_kingdom_knife",
+        "wp_name": "Kingdom Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_ktac_blade",
+        "wp_name": "K/TAC Blade"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_iridian_thorn_blade",
+        "wp_name": "Iridian Thorn Blade"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_arcane_gauntlets",
+        "wp_name": "Arcane Gauntlets"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_champions_2025_butterfly_knife",
+        "wp_name": "Champions 2025 Butterfly Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_genesis_arc",
+        "wp_name": "Genesis Arc"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_artisan_foil",
+        "wp_name": "Artisan Foil"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_shellspire_sword",
+        "wp_name": "Shellspire Sword"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_transition_knife",
+        "wp_name": "Transition Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_byteshift_knife",
+        "wp_name": "Byteshift Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_torque_coiler",
+        "wp_name": "Torque Coiler"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_mystbloom_fanblade",
+        "wp_name": "Mystbloom Fanblade"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_tilde_knife",
+        "wp_name": "Tilde Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_sandswept_dagger",
+        "wp_name": "Sandswept Dagger"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_solarex_relic",
+        "wp_name": "Solarex Relic"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_vct_2025_karambit",
+        "wp_name": "VCT 2025 Karambit"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_5_years__beta_remastered_knife",
+        "wp_name": "5 Years // Beta Remastered Knife"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "meele_ignite_fan",
+        "wp_name": "Ignite Fan"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "odin_evori_dreamwings_odin",
+        "wp_name": "Evori Dreamwings Odin"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "odin_doombringer_odin",
+        "wp_name": "Doombringer Odin"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "odin_glitchpop_odin",
+        "wp_name": "Glitchpop Odin"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "odin_dolmirs_revenge_odin",
+        "wp_name": "Dolmir's Revenge Odin"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "odin_neo_frontier_odin",
+        "wp_name": "Neo Frontier Odin"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "odin_sentinels_of_light_odin",
+        "wp_name": "Sentinels of Light Odin"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "odin_blastx_odin",
+        "wp_name": "BlastX Odin"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "odin_xenohunter_odin",
+        "wp_name": "Xenohunter Odin"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "odin_neptune_odin",
+        "wp_name": "Neptune Odin"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "odin_prime20_odin",
+        "wp_name": "Prime//2.0 Odin"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "odin_reaver_odin",
+        "wp_name": "Reaver Odin"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "odin_sovereign_odin",
+        "wp_name": "Sovereign Odin"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "odin_altitude_odin",
+        "wp_name": "Altitude Odin"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "odin_orion_odin",
+        "wp_name": "Orion Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_smite_odin",
+        "wp_name": "Smite Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_sensation_odin",
+        "wp_name": "Sensation Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_fortunes_hand_odin",
+        "wp_name": "Fortune's Hand Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_heartbreaker_odin",
+        "wp_name": "Heartbreaker Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_tactiplay_odin",
+        "wp_name": "Tactiplay Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_rune_stone_odin",
+        "wp_name": "Rune Stone Odin"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "odin_comet_odin",
+        "wp_name": "Comet Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_doom_wing_odin",
+        "wp_name": "Doom Wing Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_nitro_odin",
+        "wp_name": "Nitro Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_topotek_odin",
+        "wp_name": "Topotek Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_nanobreak_odin",
+        "wp_name": "Nanobreak Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_exe_odin",
+        "wp_name": ".EXE Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_prism_iii_odin",
+        "wp_name": "Prism III Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_coalition_cobra_odin",
+        "wp_name": "Coalition: Cobra Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_lightwave_odin",
+        "wp_name": "Lightwave Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_schema_odin",
+        "wp_name": "Schema Odin"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "odin_lycans_bane_odin",
+        "wp_name": "Lycan's Bane Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_freehand_odin",
+        "wp_name": "Freehand Odin"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "odin_aerosol_odin",
+        "wp_name": "Aerosol Odin"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "odin_solarex_odin",
+        "wp_name": "Solarex Odin"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "operator_radiant_entertainment_system_operator",
+        "wp_name": "Radiant Entertainment System\n                    Operator"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "operator_elderflame_operator",
+        "wp_name": "Elderflame Operator"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "operator_ora_by_onetap_operator",
+        "wp_name": "ORA by OneTap Operator"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "operator_rgx_11z_pro_operator",
+        "wp_name": "RGX 11z Pro Operator"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "operator_divergence_operator",
+        "wp_name": "Divergence Operator"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "operator_araxys_operator",
+        "wp_name": "Araxys Operator"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "operator_glitchpop_operator",
+        "wp_name": "Glitchpop Operator"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "operator_prelude_to_chaos_operator",
+        "wp_name": "Prelude to Chaos Operator"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "operator_imperium_operator",
+        "wp_name": "Imperium Operator"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "operator_bubblegum_deathwish_operator",
+        "wp_name": "Bubblegum Deathwish Operator"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "operator_sentinels_of_light_operator",
+        "wp_name": "Sentinels of Light Operator"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "operator_mystbloom_operator",
+        "wp_name": "Mystbloom Operator"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "operator_splashx_operator",
+        "wp_name": "SplashX Operator"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "operator_valorant_go_vol_2_operator",
+        "wp_name": "VALORANT GO! Vol. 2 Operator"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "operator_origin_operator",
+        "wp_name": "Origin Operator"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "operator_forsaken_operator",
+        "wp_name": "Forsaken Operator"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "operator_magepunk_operator",
+        "wp_name": "Magepunk Operator"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "operator_spline_operator",
+        "wp_name": "Spline Operator"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "operator_valiant_hero_operator",
+        "wp_name": "Valiant Hero Operator"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "operator_ion_operator",
+        "wp_name": "Ion Operator"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "operator_cryostasis_operator",
+        "wp_name": "Cryostasis Operator"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "operator_gravitational_uranium_neuroblaster_operator",
+        "wp_name": "Gravitational Uranium Neuroblaster\n                    Operator"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "operator_reaver_operator",
+        "wp_name": "Reaver Operator"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "operator_tethered_realms_operator",
+        "wp_name": "Tethered Realms Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_mkvii_liberty_operator",
+        "wp_name": "MK.VII Liberty Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_team_ace_operator",
+        "wp_name": "Team Ace Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_prism_operator",
+        "wp_name": "Prism Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_kohaku__matsuba_operator",
+        "wp_name": "Kohaku & Matsuba Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_minima_operator",
+        "wp_name": "Minima Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_silvanus_operator",
+        "wp_name": "Silvanus Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_tigris_operator",
+        "wp_name": "Tigris Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_intergrade_operator",
+        "wp_name": "Intergrade Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_endeavour_operator",
+        "wp_name": "Endeavour Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_infantry_operator",
+        "wp_name": "Infantry Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_daydreams_operator",
+        "wp_name": "Daydreams Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_luxe_operator",
+        "wp_name": "Luxe Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_convex_operator",
+        "wp_name": "Convex Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_frequency_operator",
+        "wp_name": "Frequency Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_celestia_operator",
+        "wp_name": "Celestia Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_heartbreaker_operator",
+        "wp_name": "Heartbreaker Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_tactitreat_operator",
+        "wp_name": "Tacti-Treat Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_striker_operator",
+        "wp_name": "Striker Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_red_alert_operator",
+        "wp_name": "Red Alert Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_nitro_operator",
+        "wp_name": "Nitro Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_spitfire_operator",
+        "wp_name": "Spitfire Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_retrowave_operator",
+        "wp_name": "Retrowave Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_ktac_operator",
+        "wp_name": "K/TAC Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_blush_operator",
+        "wp_name": "Blush Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_iridian_thorn_operator",
+        "wp_name": "Iridian Thorn Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_genesis_operator",
+        "wp_name": "Genesis Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_libretto_operator",
+        "wp_name": "Libretto Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_torque_operator",
+        "wp_name": "Torque Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_cavalier_operator",
+        "wp_name": "Cavalier Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_aerosol_operator",
+        "wp_name": "Aerosol Operator"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "operator_tilde_operator",
+        "wp_name": "Tilde Operator"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "operator_haloform_operator",
+        "wp_name": "Haloform Operator"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "outlaw_phaseguard_outlaw",
+        "wp_name": "Phaseguard Outlaw"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "outlaw_exo_outlaw",
+        "wp_name": "EX.O Outlaw"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "outlaw_rgx_11z_pro_outlaw",
+        "wp_name": "RGX 11z Pro Outlaw"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "outlaw_araxys_outlaw",
+        "wp_name": "Araxys Outlaw"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "outlaw_bolt_outlaw",
+        "wp_name": "Bolt Outlaw"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "outlaw_ego_outlaw",
+        "wp_name": "Ego Outlaw"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "outlaw_aperture_outlaw",
+        "wp_name": "Aperture Outlaw"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "outlaw_prismreloaded_outlaw",
+        "wp_name": "Prism//Reloaded Outlaw"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "outlaw_holomoku_outlaw",
+        "wp_name": "Holomoku Outlaw"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "outlaw_wasteland_outlaw",
+        "wp_name": "Wasteland Outlaw"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "outlaw_smite_outlaw",
+        "wp_name": "Smite Outlaw"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "outlaw_atlas__cmd_outlaw",
+        "wp_name": "ATLAS // CMD Outlaw"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "outlaw_overlay_outlaw",
+        "wp_name": "Overlay Outlaw"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "outlaw_moon_scout_outlaw",
+        "wp_name": "Moon Scout Outlaw"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "outlaw_aquatica_outlaw",
+        "wp_name": "Aquatica Outlaw"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "outlaw_byteshift_outlaw",
+        "wp_name": "Byteshift Outlaw"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "outlaw_mystbloom_outlaw",
+        "wp_name": "Mystbloom Outlaw"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "outlaw_heartseeker_outlaw",
+        "wp_name": "Heartseeker Outlaw"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "outlaw_cloudweaver_outlaw",
+        "wp_name": "Cloudweaver Outlaw"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "phantom_radiant_entertainment_system_phantom",
+        "wp_name": "Radiant Entertainment System\n                    Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_spectrum_phantom",
+        "wp_name": "Spectrum Phantom"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "phantom_ora_by_onetap_phantom",
+        "wp_name": "ORA by OneTap Phantom"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "phantom_protocol_781a_phantom",
+        "wp_name": "Protocol 781-A Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_rgx_11z_pro_phantom",
+        "wp_name": "RGX 11z Pro Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_araxys_phantom",
+        "wp_name": "Araxys Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_nocturnum_phantom",
+        "wp_name": "Nocturnum Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_doombringer_phantom",
+        "wp_name": "Doombringer Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_glitchpop_phantom",
+        "wp_name": "Glitchpop Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_chronovoid_phantom",
+        "wp_name": "ChronoVoid Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_prelude_to_chaos_phantom",
+        "wp_name": "Prelude to Chaos Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_singularity_phantom",
+        "wp_name": "Singularity Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_neo_frontier_phantom",
+        "wp_name": "Neo Frontier Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_bubblegum_deathwish_phantom",
+        "wp_name": "Bubblegum Deathwish Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_primordium_phantom",
+        "wp_name": "Primordium Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_ruination_phantom",
+        "wp_name": "Ruination Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_sentinels_of_light_phantom",
+        "wp_name": "Sentinels of Light Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_mystbloom_phantom",
+        "wp_name": "Mystbloom Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_blastx_phantom",
+        "wp_name": "BlastX Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_xenohunter_phantom",
+        "wp_name": "Xenohunter Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_valorant_go_vol_1_phantom",
+        "wp_name": "VALORANT GO! Vol. 1 Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_neptune_phantom",
+        "wp_name": "Neptune Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_gaias_vengeance_phantom",
+        "wp_name": "Gaia's Vengeance Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_bolt_phantom",
+        "wp_name": "Bolt Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_radiant_crisis_001_phantom",
+        "wp_name": "Radiant Crisis 001 Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_nebula_phantom",
+        "wp_name": "Nebula Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_undercity_phantom",
+        "wp_name": "Undercity Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_doodle_buds_phantom",
+        "wp_name": "Doodle Buds Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_soulstrife_phantom",
+        "wp_name": "Soulstrife Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_prime20_phantom",
+        "wp_name": "Prime//2.0 Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_celestial_phantom",
+        "wp_name": "Celestial Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_magepunk_phantom",
+        "wp_name": "Magepunk Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_spline_phantom",
+        "wp_name": "Spline Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_ion_phantom",
+        "wp_name": "Ion Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_oni_phantom",
+        "wp_name": "Oni Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_helix_phantom",
+        "wp_name": "Helix Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_reaver_phantom",
+        "wp_name": "Reaver Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_sovereign_phantom",
+        "wp_name": "Sovereign Phantom"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "phantom_recon_phantom",
+        "wp_name": "Recon Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_valorant_go_vol_3_phantom",
+        "wp_name": "VALORANT GO! Vol. 3 Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_aperture_phantom",
+        "wp_name": "Aperture Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_emberclad_phantom",
+        "wp_name": "Emberclad Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_abyssal_phantom",
+        "wp_name": "Abyssal Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_nanomight_phantom",
+        "wp_name": "Nanomight Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_sarmad_phantom",
+        "wp_name": "Sarmad Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_chromedek_phantom",
+        "wp_name": "Chromedek Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_team_ace_phantom",
+        "wp_name": "Team Ace Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_avalanche_phantom",
+        "wp_name": "Avalanche Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_prism_phantom",
+        "wp_name": "Prism Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_kohaku__matsuba_phantom",
+        "wp_name": "Kohaku & Matsuba Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_minima_phantom",
+        "wp_name": "Minima Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_combat_crafts_phantom",
+        "wp_name": "Combat Crafts Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_silvanus_phantom",
+        "wp_name": "Silvanus Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_orion_phantom",
+        "wp_name": "Orion Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_snowfall_phantom",
+        "wp_name": "Snowfall Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_tigris_phantom",
+        "wp_name": "Tigris Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_wasteland_phantom",
+        "wp_name": "Wasteland Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_winterwunderland_phantom",
+        "wp_name": "Winterwunderland Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_rush_phantom",
+        "wp_name": "Rush Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_smite_phantom",
+        "wp_name": "Smite Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_daydreams_phantom",
+        "wp_name": "Daydreams Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_galleria_phantom",
+        "wp_name": "Galleria Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_switchback_phantom",
+        "wp_name": "Switchback Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_reverie_phantom",
+        "wp_name": "Reverie Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_fortunes_hand_phantom",
+        "wp_name": "Fortune's Hand Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_task_force_809_phantom",
+        "wp_name": "Task Force 809 Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_piedra_del_sol_phantom",
+        "wp_name": "Piedra del Sol Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_composite_phantom",
+        "wp_name": "Composite Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_overlay_phantom",
+        "wp_name": "Overlay Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_champions_2022_phantom",
+        "wp_name": "Champions 2022 Phantom"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "phantom_champions_2024_phantom",
+        "wp_name": "Champions 2024 Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_tactiplay_phantom",
+        "wp_name": "Tactiplay Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_doom_wing_phantom",
+        "wp_name": "Doom Wing Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_velocity_phantom",
+        "wp_name": "Velocity Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_topotek_phantom",
+        "wp_name": "Topotek Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_interhelm_phantom",
+        "wp_name": "Interhelm Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_nanobreak_phantom",
+        "wp_name": "Nanobreak Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_hieroscape_phantom",
+        "wp_name": "Hieroscape Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_bound_phantom",
+        "wp_name": "Bound Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_serenity_phantom",
+        "wp_name": "Serenity Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_kingdom_phantom",
+        "wp_name": "Kingdom Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_rdvr_phantom",
+        "wp_name": "RDVR Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_perch_phantom",
+        "wp_name": "Perch Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_9_lives_phantom",
+        "wp_name": "9 Lives Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_hue_shift_phantom",
+        "wp_name": "Hue Shift Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_aero_phantom",
+        "wp_name": "Aero Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_artisan_phantom",
+        "wp_name": "Artisan Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_lightwave_phantom",
+        "wp_name": "Lightwave Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_shellspire_phantom",
+        "wp_name": "Shellspire Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_infinity_phantom",
+        "wp_name": "Infinity Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_heartseeker_phantom",
+        "wp_name": "Heartseeker Phantom"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "phantom_solarex_phantom",
+        "wp_name": "Solarex Phantom"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "phantom_convergence_phantom",
+        "wp_name": "Convergence Phantom"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "sheriff_ora_by_onetap_sheriff",
+        "wp_name": "ORA by OneTap Sheriff"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "sheriff_protocol_781a_sheriff",
+        "wp_name": "Protocol 781-A Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_exo_sheriff",
+        "wp_name": "EX.O Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_kuronami_sheriff",
+        "wp_name": "Kuronami Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_rgx_11z_pro_sheriff",
+        "wp_name": "RGX 11z Pro Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_araxys_sheriff",
+        "wp_name": "Araxys Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_doombringer_sheriff",
+        "wp_name": "Doombringer Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_chronovoid_sheriff",
+        "wp_name": "ChronoVoid Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_prelude_to_chaos_sheriff",
+        "wp_name": "Prelude to Chaos Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_imperium_sheriff",
+        "wp_name": "Imperium Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_singularity_sheriff",
+        "wp_name": "Singularity Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_neo_frontier_sheriff",
+        "wp_name": "Neo Frontier Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_bubblegum_deathwish_sheriff",
+        "wp_name": "Bubblegum Deathwish Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_overdrive_sheriff",
+        "wp_name": "Overdrive Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_sentinels_of_light_sheriff",
+        "wp_name": "Sentinels of Light Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_mystbloom_sheriff",
+        "wp_name": "Mystbloom Sheriff"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "sheriff_nebula_sheriff",
+        "wp_name": "Nebula Sheriff"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "sheriff_aemondir_sheriff",
+        "wp_name": "Aemondir Sheriff"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "sheriff_magepunk_sheriff",
+        "wp_name": "Magepunk Sheriff"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "sheriff_crimsonbeast_sheriff",
+        "wp_name": "Crimsonbeast Sheriff"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "sheriff_ion_sheriff",
+        "wp_name": "Ion Sheriff"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "sheriff_reaver_sheriff",
+        "wp_name": "Reaver Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_altitude_sheriff",
+        "wp_name": "Altitude Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_aristocrat_sheriff",
+        "wp_name": "Aristocrat Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_abyssal_sheriff",
+        "wp_name": "Abyssal Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_minima_sheriff",
+        "wp_name": "Minima Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_silvanus_sheriff",
+        "wp_name": "Silvanus Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_sakura_sheriff",
+        "wp_name": "Sakura Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_wasteland_sheriff",
+        "wp_name": "Wasteland Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_prism_ii_sheriff",
+        "wp_name": "Prism II Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_convex_sheriff",
+        "wp_name": "Convex Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_wayfarer_sheriff",
+        "wp_name": "Wayfarer Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_mythmaker_sheriff",
+        "wp_name": "Mythmaker Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_enforcer_sheriff",
+        "wp_name": "Enforcer Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_immortalized_sheriff",
+        "wp_name": "Immortalized Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_space_piercer_sheriff",
+        "wp_name": "Space Piercer Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_composite_sheriff",
+        "wp_name": "Composite Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_heartbreaker_sheriff",
+        "wp_name": "Heartbreaker Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_overlay_sheriff",
+        "wp_name": "Overlay Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_surge_sheriff",
+        "wp_name": "Surge Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_moon_scout_sheriff",
+        "wp_name": "Moon Scout Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_nanobreak_sheriff",
+        "wp_name": "Nanobreak Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_sys_sheriff",
+        "wp_name": ".SYS Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_protektor_sheriff",
+        "wp_name": "Protektor Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_retrowave_sheriff",
+        "wp_name": "Retrowave Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_ktac_sheriff",
+        "wp_name": "K/TAC Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_monstrocity_sheriff",
+        "wp_name": "Monstrocity Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_iridian_thorn_sheriff",
+        "wp_name": "Iridian Thorn Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_signature_sheriff",
+        "wp_name": "Signature Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_polyfox_sheriff",
+        "wp_name": "POLYfox Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_polyfrog_sheriff",
+        "wp_name": "POLYfrog Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_lightwave_sheriff",
+        "wp_name": "Lightwave Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_peacekeeper_sheriff",
+        "wp_name": "Peacekeeper Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_schema_sheriff",
+        "wp_name": "Schema Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_cloudweaver_sheriff",
+        "wp_name": "Cloudweaver Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_sandswept_sheriff",
+        "wp_name": "Sandswept Sheriff"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "sheriff_solarex_sheriff",
+        "wp_name": "Solarex Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_varnish_sheriff",
+        "wp_name": "Varnish Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_game_over_sheriff",
+        "wp_name": "Game Over Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "sheriff_arcane_sheriff",
+        "wp_name": "Arcane Sheriff"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "sheriff_death_wish_sheriff",
+        "wp_name": "Death Wish Sheriff"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "shorty_araxys_shorty",
+        "wp_name": "Araxys Shorty"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "shorty_prelude_to_chaos_shorty",
+        "wp_name": "Prelude to Chaos Shorty"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "shorty_primordium_shorty",
+        "wp_name": "Primordium Shorty"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "shorty_sentinels_of_light_shorty",
+        "wp_name": "Sentinels of Light Shorty"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "shorty_neptune_shorty",
+        "wp_name": "Neptune Shorty"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "shorty_gaias_vengeance_shorty",
+        "wp_name": "Gaia's Vengeance Shorty"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "shorty_doodle_buds_shorty",
+        "wp_name": "Doodle Buds Shorty"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "shorty_oni_shorty",
+        "wp_name": "Oni Shorty"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "shorty_chromedek_shorty",
+        "wp_name": "Chromedek Shorty"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "shorty_tigris_shorty",
+        "wp_name": "Tigris Shorty"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "shorty_wasteland_shorty",
+        "wp_name": "Wasteland Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_prism_ii_shorty",
+        "wp_name": "Prism II Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_hard_bargain_shorty",
+        "wp_name": "Hard Bargain Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_sidekick_shorty",
+        "wp_name": "Sidekick Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_karabasan_shorty",
+        "wp_name": "Karabasan Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_rune_stone_shorty",
+        "wp_name": "Rune Stone Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_doom_wing_shorty",
+        "wp_name": "Doom Wing Shorty"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "shorty_hivemind_shorty",
+        "wp_name": "Hivemind Shorty"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "shorty_velocity_shorty",
+        "wp_name": "Velocity Shorty"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "shorty_ruin_shorty",
+        "wp_name": "Ruin Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_monarch_shorty",
+        "wp_name": "Monarch Shorty"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "shorty_guardrail_shorty",
+        "wp_name": "Guardrail Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_aquatica_shorty",
+        "wp_name": "Aquatica Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_wunderkind_shorty",
+        "wp_name": "Wunderkind Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_perch_shorty",
+        "wp_name": "Perch Shorty"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "shorty_genesis_shorty",
+        "wp_name": "Genesis Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_snakebite_shorty",
+        "wp_name": "Snakebite Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_hue_shift_shorty",
+        "wp_name": "Hue Shift Shorty"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "shorty_transition_shorty",
+        "wp_name": "Transition Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_aerosol_shorty",
+        "wp_name": "Aerosol Shorty"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "shorty_tilde_shorty",
+        "wp_name": "Tilde Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_heartseeker_shorty",
+        "wp_name": "Heartseeker Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_cloudweaver_shorty",
+        "wp_name": "Cloudweaver Shorty"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "shorty_wayfinder_shorty",
+        "wp_name": "Wayfinder Shorty"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "spectre_protocol_781a_spectre",
+        "wp_name": "Protocol 781-A Spectre"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "spectre_evori_dreamwings_spectre",
+        "wp_name": "Evori Dreamwings Spectre"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "spectre_exo_spectre",
+        "wp_name": "EX.O Spectre"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "spectre_kuronami_spectre",
+        "wp_name": "Kuronami Spectre"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "spectre_rgx_11z_pro_spectre",
+        "wp_name": "RGX 11z Pro Spectre"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "spectre_prelude_to_chaos_spectre",
+        "wp_name": "Prelude to Chaos Spectre"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "spectre_singularity_spectre",
+        "wp_name": "Singularity Spectre"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "spectre_primordium_spectre",
+        "wp_name": "Primordium Spectre"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "spectre_ruination_spectre",
+        "wp_name": "Ruination Spectre"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "spectre_sentinels_of_light_spectre",
+        "wp_name": "Sentinels of Light Spectre"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "spectre_blastx_spectre",
+        "wp_name": "BlastX Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_valorant_go_vol_1_spectre",
+        "wp_name": "VALORANT GO! Vol. 1 Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_neptune_spectre",
+        "wp_name": "Neptune Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_bolt_spectre",
+        "wp_name": "Bolt Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_radiant_crisis_001_spectre",
+        "wp_name": "Radiant Crisis 001 Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_forsaken_spectre",
+        "wp_name": "Forsaken Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_soulstrife_spectre",
+        "wp_name": "Soulstrife Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_prime_spectre",
+        "wp_name": "Prime Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_magepunk_spectre",
+        "wp_name": "Magepunk Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_spline_spectre",
+        "wp_name": "Spline Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_ion_spectre",
+        "wp_name": "Ion Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_gravitational_uranium_neuroblaster_spectre",
+        "wp_name": "Gravitational Uranium Neuroblaster\n                    Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_helix_spectre",
+        "wp_name": "Helix Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_reaver_spectre",
+        "wp_name": "Reaver Spectre"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "spectre_recon_spectre",
+        "wp_name": "Recon Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_valorant_go_vol_3_spectre",
+        "wp_name": "VALORANT GO! Vol. 3 Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_emberclad_spectre",
+        "wp_name": "Emberclad Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_abyssal_spectre",
+        "wp_name": "Abyssal Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_sarmad_spectre",
+        "wp_name": "Sarmad Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_horizon_spectre",
+        "wp_name": "Horizon Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_avalanche_spectre",
+        "wp_name": "Avalanche Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_prism_spectre",
+        "wp_name": "Prism Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_minima_spectre",
+        "wp_name": "Minima Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_luna_spectre",
+        "wp_name": "Luna Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_tigris_spectre",
+        "wp_name": "Tigris Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_no_limits_spectre",
+        "wp_name": "NO LIMITS Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_wasteland_spectre",
+        "wp_name": "Wasteland Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_intergrade_spectre",
+        "wp_name": "Intergrade Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_infantry_spectre",
+        "wp_name": "Infantry Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_luxe_spectre",
+        "wp_name": "Luxe Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_rupture_spectre",
+        "wp_name": "Rupture Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_convex_spectre",
+        "wp_name": "Convex Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_wonderstallion_spectre",
+        "wp_name": "Wonderstallion Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_task_force_809_spectre",
+        "wp_name": "Task Force 809 Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_fiber_optic_spectre",
+        "wp_name": "Fiber Optic Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_celestia_spectre",
+        "wp_name": "Celestia Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_atlas__cmd_spectre",
+        "wp_name": "ATLAS // CMD Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_striker_spectre",
+        "wp_name": "Striker Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_comet_spectre",
+        "wp_name": "Comet Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_starlit_odyssey_spectre",
+        "wp_name": "Starlit Odyssey Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_hivemind_spectre",
+        "wp_name": "Hivemind Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_venturi_spectre",
+        "wp_name": "Venturi Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_velocity_spectre",
+        "wp_name": "Velocity Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_serenity_spectre",
+        "wp_name": "Serenity Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_yoonseul_spectre",
+        "wp_name": "Yoonseul Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_kingdom_spectre",
+        "wp_name": "Kingdom Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_blush_spectre",
+        "wp_name": "Blush Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_monstrocity_spectre",
+        "wp_name": "Monstrocity Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_belaflaire_spectre",
+        "wp_name": "Belaflaire Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_hue_shift_spectre",
+        "wp_name": "Hue Shift Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_aero_spectre",
+        "wp_name": "Aero Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_polyfrog_spectre",
+        "wp_name": "POLYfrog Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_shellspire_spectre",
+        "wp_name": "Shellspire Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_torque_spectre",
+        "wp_name": "Torque Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_infinity_spectre",
+        "wp_name": "Infinity Spectre"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "spectre_freehand_spectre",
+        "wp_name": "Freehand Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_sandswept_spectre",
+        "wp_name": "Sandswept Spectre"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "spectre_solarex_spectre",
+        "wp_name": "Solarex Spectre"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "stinger_rgx_11z_pro_stinger",
+        "wp_name": "RGX 11z Pro Stinger"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "stinger_prelude_to_chaos_stinger",
+        "wp_name": "Prelude to Chaos Stinger"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "stinger_bubblegum_deathwish_stinger",
+        "wp_name": "Bubblegum Deathwish Stinger"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "stinger_overdrive_stinger",
+        "wp_name": "Overdrive Stinger"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "stinger_cyrax_stinger",
+        "wp_name": "CYRAX Stinger"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "stinger_doodle_buds_stinger",
+        "wp_name": "Doodle Buds Stinger"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "stinger_sovereign_stinger",
+        "wp_name": "Sovereign Stinger"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "stinger_ego_stinger",
+        "wp_name": "Ego Stinger"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "stinger_aristocrat_stinger",
+        "wp_name": "Aristocrat Stinger"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "stinger_nanomight_stinger",
+        "wp_name": "Nanomight Stinger"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "stinger_silvanus_stinger",
+        "wp_name": "Silvanus Stinger"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "stinger_sakura_stinger",
+        "wp_name": "Sakura Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_prism_ii_stinger",
+        "wp_name": "Prism II Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_switchback_stinger",
+        "wp_name": "Switchback Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_sensation_stinger",
+        "wp_name": "Sensation Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_storm_maw_stinger",
+        "wp_name": "Storm Maw Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_immortalized_stinger",
+        "wp_name": "Immortalized Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_celestia_stinger",
+        "wp_name": "Celestia Stinger"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "stinger_composite_stinger",
+        "wp_name": "Composite Stinger"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "stinger_overlay_stinger",
+        "wp_name": "Overlay Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_tactiplay_stinger",
+        "wp_name": "Tactiplay Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_red_alert_stinger",
+        "wp_name": "Red Alert Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_surge_stinger",
+        "wp_name": "Surge Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_shimmer_stinger",
+        "wp_name": "Shimmer Stinger"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "stinger_sys_stinger",
+        "wp_name": ".SYS Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_aquatica_stinger",
+        "wp_name": "Aquatica Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_couture_stinger",
+        "wp_name": "Couture Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_signature_stinger",
+        "wp_name": "Signature Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_moondash_stinger",
+        "wp_name": "Moondash Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_libretto_stinger",
+        "wp_name": "Libretto Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_schema_stinger",
+        "wp_name": "Schema Stinger"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "stinger_lycans_bane_stinger",
+        "wp_name": "Lycan's Bane Stinger"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "stinger_transition_stinger",
+        "wp_name": "Transition Stinger"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "stinger_cavalier_stinger",
+        "wp_name": "Cavalier Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_refractrix_stinger",
+        "wp_name": "Refractrix Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_heartseeker_stinger",
+        "wp_name": "Heartseeker Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_gridcrash_stinger",
+        "wp_name": "Gridcrash Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_cloudweaver_stinger",
+        "wp_name": "Cloudweaver Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_depths_stinger",
+        "wp_name": "Depths Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_varnish_stinger",
+        "wp_name": "Varnish Stinger"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "stinger_convergence_stinger",
+        "wp_name": "Convergence Stinger"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "vandal_phaseguard_vandal",
+        "wp_name": "Phaseguard Vandal"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "vandal_elderflame_vandal",
+        "wp_name": "Elderflame Vandal"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "vandal_ora_by_onetap_vandal",
+        "wp_name": "ORA by OneTap Vandal"
+    },
+    {
+        "rarity": 5,
+        "wp_id": "vandal_evori_dreamwings_vandal",
+        "wp_name": "Evori Dreamwings Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_exo_vandal",
+        "wp_name": "EX.O Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_kuronami_vandal",
+        "wp_name": "Kuronami Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_rgx_11z_pro_vandal",
+        "wp_name": "RGX 11z Pro Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_divergence_vandal",
+        "wp_name": "Divergence Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_araxys_vandal",
+        "wp_name": "Araxys Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_glitchpop_vandal",
+        "wp_name": "Glitchpop Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_chronovoid_vandal",
+        "wp_name": "ChronoVoid Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_prelude_to_chaos_vandal",
+        "wp_name": "Prelude to Chaos Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_imperium_vandal",
+        "wp_name": "Imperium Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_singularity_vandal",
+        "wp_name": "Singularity Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_dolmirs_revenge_vandal",
+        "wp_name": "Dolmir's Revenge Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_primordium_vandal",
+        "wp_name": "Primordium Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_overdrive_vandal",
+        "wp_name": "Overdrive Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_sentinels_of_light_vandal",
+        "wp_name": "Sentinels of Light Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_cyrax_vandal",
+        "wp_name": "CYRAX Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_splashx_vandal",
+        "wp_name": "SplashX Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_valorant_go_vol_2_vandal",
+        "wp_name": "VALORANT GO! Vol. 2 Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_neptune_vandal",
+        "wp_name": "Neptune Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_gaias_vengeance_vandal",
+        "wp_name": "Gaia's Vengeance Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_origin_vandal",
+        "wp_name": "Origin Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_forsaken_vandal",
+        "wp_name": "Forsaken Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_prime_vandal",
+        "wp_name": "Prime Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_xerfang_vandal",
+        "wp_name": "XERØFANG Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_blackmarket_vandal",
+        "wp_name": "Black.Market Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_aemondir_vandal",
+        "wp_name": "Aemondir Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_magepunk_vandal",
+        "wp_name": "Magepunk Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_valiant_hero_vandal",
+        "wp_name": "Valiant Hero Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_crimsonbeast_vandal",
+        "wp_name": "Crimsonbeast Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_ion_vandal",
+        "wp_name": "Ion Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_oni_vandal",
+        "wp_name": "Oni Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_cryostasis_vandal",
+        "wp_name": "Cryostasis Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_reaver_vandal",
+        "wp_name": "Reaver Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_tethered_realms_vandal",
+        "wp_name": "Tethered Realms Vandal"
+    },
+    {
+        "rarity": 3,
+        "wp_id": "vandal_ego_vandal",
+        "wp_name": "Ego Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_altitude_vandal",
+        "wp_name": "Altitude Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_aristocrat_vandal",
+        "wp_name": "Aristocrat Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_mkvii_liberty_vandal",
+        "wp_name": "MK.VII Liberty Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_sarmad_vandal",
+        "wp_name": "Sarmad Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_team_ace_vandal",
+        "wp_name": "Team Ace Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_horizon_vandal",
+        "wp_name": "Horizon Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_avalanche_vandal",
+        "wp_name": "Avalanche Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_nunca_olvidados_vandal",
+        "wp_name": "Nunca Olvidados Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_minima_vandal",
+        "wp_name": "Minima Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_silvanus_vandal",
+        "wp_name": "Silvanus Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_luna_vandal",
+        "wp_name": "Luna Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_orion_vandal",
+        "wp_name": "Orion Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_sakura_vandal",
+        "wp_name": "Sakura Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_titanmail_vandal",
+        "wp_name": "Titanmail Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_no_limits_vandal",
+        "wp_name": "NO LIMITS Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_holomoku_vandal",
+        "wp_name": "Holomoku Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_wasteland_vandal",
+        "wp_name": "Wasteland Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_winterwunderland_vandal",
+        "wp_name": "Winterwunderland Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_endeavour_vandal",
+        "wp_name": "Endeavour Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_prism_ii_vandal",
+        "wp_name": "Prism II Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_smite_vandal",
+        "wp_name": "Smite Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_luxe_vandal",
+        "wp_name": "Luxe Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_sensation_vandal",
+        "wp_name": "Sensation Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_wonderstallion_vandal",
+        "wp_name": "Wonderstallion Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_storm_maw_vandal",
+        "wp_name": "Storm Maw Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_immortalized_vandal",
+        "wp_name": "Immortalized Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_atlas__cmd_vandal",
+        "wp_name": "ATLAS // CMD Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_champions_2021_vandal",
+        "wp_name": "Champions 2021 Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_champions_2023_vandal",
+        "wp_name": "Champions 2023 Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_comet_vandal",
+        "wp_name": "Comet Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_starlit_odyssey_vandal",
+        "wp_name": "Starlit Odyssey Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_nitro_vandal",
+        "wp_name": "Nitro Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_hivemind_vandal",
+        "wp_name": "Hivemind Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_venturi_vandal",
+        "wp_name": "Venturi Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_heartstopper_vandal",
+        "wp_name": "Heartstopper Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_ruin_vandal",
+        "wp_name": "Ruin Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_exe_vandal",
+        "wp_name": ".EXE Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_sys_vandal",
+        "wp_name": ".SYS Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_bubble_pop_vandal",
+        "wp_name": "Bubble Pop Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_guardrail_vandal",
+        "wp_name": "Guardrail Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_ktac_vandal",
+        "wp_name": "K/TAC Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_monstrocity_vandal",
+        "wp_name": "Monstrocity Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_arcane_vandal",
+        "wp_name": "Arcane Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_champions_2025_vandal",
+        "wp_name": "Champions 2025 Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_belaflaire_vandal",
+        "wp_name": "Belaflaire Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_schema_vandal",
+        "wp_name": "Schema Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_lycans_bane_vandal",
+        "wp_name": "Lycan's Bane Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_transition_vandal",
+        "wp_name": "Transition Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_byteshift_vandal",
+        "wp_name": "Byteshift Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_torque_vandal",
+        "wp_name": "Torque Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_cavalier_vandal",
+        "wp_name": "Cavalier Vandal"
+    },
+    {
+        "rarity": 4,
+        "wp_id": "vandal_mystbloom_vandal",
+        "wp_name": "Mystbloom Vandal"
+    },
+    {
+        "rarity": 2,
+        "wp_id": "vandal_sandswept_vandal",
+        "wp_name": "Sandswept Vandal"
+    },
+    {
+        "rarity": 1,
+        "wp_id": "vandal_depths_vandal",
+        "wp_name": "Depths Vandal"
+    }
+]
