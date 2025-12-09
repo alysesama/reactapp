@@ -79,6 +79,17 @@ function Effects() {
   return (
     <div className="topic-section">
       <h2>Side Effects với useEffect Hook</h2>
+      <div style={{ display: 'flex', gap: '12px', alignItems: 'center', marginBottom: '16px' }}>
+        <button onClick={() => setCount((c) => c + 1)}>Tăng count ({count})</button>
+        <input
+          type="text"
+          value={name}
+          placeholder="Nhập tên để thấy dependencies"
+          onChange={(e) => setName(e.target.value)}
+          style={{ padding: '8px' }}
+        />
+        <span>Tên hiện tại: {name || '---'}</span>
+      </div>
       
       <div className="definition-box">
         <h4>Định nghĩa</h4>

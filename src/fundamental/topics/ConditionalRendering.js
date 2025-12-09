@@ -3,7 +3,6 @@ import { useState } from 'react';
 function ConditionalRendering() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userRole, setUserRole] = useState('user');
-  const [items] = useState(['Item 1', 'Item 2', 'Item 3']);
   const [showDetails, setShowDetails] = useState(false);
 
   return (

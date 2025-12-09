@@ -1,9 +1,6 @@
 import { getWeaponsForPool } from "./assetsCache";
 import { getPoolById } from "./poolConfig";
-import {
-    getCollectionForCategory,
-    getStatistics,
-} from "./localStorageHelper";
+import { getCollectionForCategory } from "./localStorageHelper";
 
 function toRomanTier(tier) {
     const map = {

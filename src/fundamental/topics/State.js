@@ -102,7 +102,13 @@ function Component() {
 
       <div className="interactive-demo">
         <h4>Ví dụ tương tác: Counter</h4>
-        <Counter />
+        <button
+          onClick={() => setShowCounter((value) => !value)}
+          style={{ marginBottom: '10px' }}
+        >
+          {showCounter ? 'Ẩn Counter' : 'Hiện Counter'}
+        </button>
+        {showCounter && <Counter />}
       </div>
 
       <h3>State với nhiều giá trị</h3>
