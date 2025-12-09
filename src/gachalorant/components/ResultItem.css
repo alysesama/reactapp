@@ -1,0 +1,601 @@
+:root {
+    --rarity-1-bg-start: rgba(79, 136, 191, 0.5);
+    --rarity-1-bg-end: rgba(15, 23, 42, 0.9);
+    --rarity-1-open-layer-bg-start: rgba(79, 136, 191, 1);
+    --rarity-1-open-layer-bg-end: rgba(15, 23, 42, 1);
+    --rarity-1-text: rgba(135, 206, 250, 0.95);
+    --rarity-1-text-bright: rgba(173, 216, 230, 1);
+
+    --rarity-2-bg-start: rgba(3, 145, 120, 0.55);
+    --rarity-2-bg-end: rgba(15, 23, 42, 0.9);
+    --rarity-2-open-layer-bg-start: rgba(3, 145, 120, 1);
+    --rarity-2-open-layer-bg-end: rgba(15, 23, 42, 1);
+    --rarity-2-text: rgba(94, 234, 212, 0.95);
+    --rarity-2-text-bright: rgba(153, 246, 228, 1);
+
+    --rarity-3-bg-start: rgba(175, 74, 120, 0.6);
+    --rarity-3-bg-end: rgba(15, 23, 42, 0.9);
+    --rarity-3-open-layer-bg-start: rgba(175, 74, 120, 1);
+    --rarity-3-open-layer-bg-end: rgba(15, 23, 42, 1);
+    --rarity-3-text: rgba(244, 143, 177, 0.95);
+    --rarity-3-text-bright: rgba(251, 182, 206, 1);
+
+    --rarity-4-bg-start: rgba(213, 133, 84, 0.65);
+    --rarity-4-bg-end: rgba(15, 23, 42, 0.9);
+    --rarity-4-open-layer-bg-start: rgba(213, 133, 84, 1);
+    --rarity-4-open-layer-bg-end: rgba(15, 23, 42, 1);
+    --rarity-4-text: rgba(253, 186, 116, 0.95);
+    --rarity-4-text-bright: rgba(254, 215, 170, 1);
+
+    --rarity-5-bg-start: rgba(219, 188, 90, 0.7);
+    --rarity-5-bg-end: rgba(15, 23, 42, 0.9);
+    --rarity-5-open-layer-bg-start: rgba(219, 188, 90, 1);
+    --rarity-5-open-layer-bg-end: rgba(15, 23, 42, 1);
+    --rarity-5-text: rgba(253, 224, 71, 0.95);
+    --rarity-5-text-bright: rgba(254, 240, 138, 1);
+
+    --quality-tier-1-color: rgba(203, 213, 225, 0.9);
+    --quality-tier-2-color: rgba(147, 197, 253, 0.9);
+    --quality-tier-3-color: rgba(167, 139, 250, 0.9);
+    --quality-tier-4-color: rgba(251, 191, 36, 0.9);
+    --quality-tier-5-color: rgba(252, 165, 165, 0.9);
+}
+
+.vlc-result-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0, 0.3, 1);
+    padding: 8px;
+    box-sizing: border-box;
+    font-family: "Valorant-Font", sans-serif;
+}
+
+/* odd cards 1-5: card-rise; even cards 1-5: card-drop */
+.vlc-result-item:nth-child(-n + 5):nth-child(odd) {
+    animation-name: card-rise;
+}
+.vlc-result-item:nth-child(-n + 5):nth-child(even) {
+    animation-name: card-drop;
+}
+/* after 5th card, odd: card-drop; even: card-rise */
+.vlc-result-item:nth-child(n + 6):nth-child(odd) {
+    animation-name: card-drop;
+}
+.vlc-result-item:nth-child(n + 6):nth-child(even) {
+    animation-name: card-rise;
+}
+
+@keyframes vlc-card-rise {
+    from {
+        transform: translateY(32px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes vlc-card-drop {
+    from {
+        transform: translateY(-32px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.vlc-result-item:hover {
+    transform: scale(1.035);
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.9);
+}
+
+.vlc-result-item__new-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.1;
+}
+
+.vlc-result-item--rarity-1 .vlc-result-item__new-tag {
+    color: var(--rarity-1-text-bright);
+}
+
+.vlc-result-item--rarity-2 .vlc-result-item__new-tag {
+    color: var(--rarity-2-text-bright);
+}
+
+.vlc-result-item--rarity-3 .vlc-result-item__new-tag {
+    color: var(--rarity-3-text-bright);
+}
+
+.vlc-result-item--rarity-4 .vlc-result-item__new-tag {
+    color: var(--rarity-4-text-bright);
+}
+
+.vlc-result-item--rarity-5 .vlc-result-item__new-tag {
+    color: var(--rarity-5-text-bright);
+}
+
+.vlc-result-item__rewards {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    z-index: 20;
+}
+
+.vlc-result-item__reward-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.vlc-result-item__reward-value {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.vlc-result-item__reward-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.vlc-result-item__body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.vlc-result-item__tier-wrapper {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 2px;
+    z-index: 20;
+}
+
+.vlc-result-item__tier {
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: default;
+    white-space: nowrap;
+}
+
+.vlc-result-item__quality-float {
+    font-size: 0.9rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.vlc-result-item__weapon-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(115%)
+        drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+    width: 90%;
+    height: 60%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.vlc-result-item__rarity-icon-bg {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.vlc-result-item__weapon-name {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-align: left;
+    word-break: break-word;
+    line-height: 1.2;
+    z-index: 20;
+    max-width: calc(100% - 16px);
+}
+
+.vlc-result-item__footer {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 20;
+}
+
+.vlc-result-item__reward {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #facc15;
+}
+
+.vlc-result-item__rarity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.vlc-result-item__rarity-icon {
+    display: none;
+}
+
+.vlc-result-item__open-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out,
+        opacity 0.5s ease-in-out;
+}
+
+.vlc-result-item__open-layer.vlc-result-item__open-layer--opening {
+    transform: translateY(-100%);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.vlc-result-item__open-layer-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.vlc-result-item__open-layer-icon-bg {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.vlc-result-item__open-layer-new-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.1;
+}
+
+.vlc-result-item--rarity-1 .vlc-result-item__open-layer {
+    background: linear-gradient(
+        0deg,
+        var(--rarity-1-open-layer-bg-start),
+        var(--rarity-1-open-layer-bg-end)
+    );
+    border: 1px solid var(--rarity-1-open-layer-bg-start);
+    filter: brightness(120%);
+}
+
+.vlc-result-item--rarity-1
+    .vlc-result-item__open-layer-new-tag {
+    color: var(--rarity-1-text-bright);
+    filter: brightness(150%);
+}
+
+.vlc-result-item--rarity-1
+    .vlc-result-item__open-layer-icon-bg {
+    filter: brightness(150%);
+}
+
+.vlc-result-item--rarity-2 .vlc-result-item__open-layer {
+    background: linear-gradient(
+        0deg,
+        var(--rarity-2-open-layer-bg-start),
+        var(--rarity-2-open-layer-bg-end)
+    );
+    border: 1px solid var(--rarity-2-open-layer-bg-start);
+    filter: brightness(120%);
+}
+
+.vlc-result-item--rarity-2
+    .vlc-result-item__open-layer-new-tag {
+    color: var(--rarity-2-text-bright);
+}
+
+.vlc-result-item--rarity-2
+    .vlc-result-item__open-layer-icon-bg {
+    filter: brightness(150%);
+}
+
+.vlc-result-item--rarity-3 .vlc-result-item__open-layer {
+    background: linear-gradient(
+        0deg,
+        var(--rarity-3-open-layer-bg-start),
+        var(--rarity-3-open-layer-bg-end)
+    );
+    border: 1px solid var(--rarity-3-open-layer-bg-start);
+    filter: brightness(120%);
+}
+
+.vlc-result-item--rarity-3
+    .vlc-result-item__open-layer-new-tag {
+    color: var(--rarity-3-text-bright);
+}
+
+.vlc-result-item--rarity-3
+    .vlc-result-item__open-layer-icon-bg {
+    filter: brightness(150%);
+}
+
+.vlc-result-item--rarity-4 .vlc-result-item__open-layer {
+    background: linear-gradient(
+        0deg,
+        var(--rarity-4-open-layer-bg-start),
+        var(--rarity-4-open-layer-bg-end)
+    );
+    border: 1px solid var(--rarity-4-open-layer-bg-start);
+    filter: brightness(120%);
+}
+
+.vlc-result-item--rarity-4
+    .vlc-result-item__open-layer-new-tag {
+    color: var(--rarity-4-text-bright);
+}
+
+.vlc-result-item--rarity-4
+    .vlc-result-item__open-layer-icon-bg {
+    filter: brightness(150%);
+}
+
+.vlc-result-item--rarity-5 .vlc-result-item__open-layer {
+    background: linear-gradient(
+        0deg,
+        var(--rarity-5-open-layer-bg-start),
+        var(--rarity-5-open-layer-bg-end)
+    );
+    border: 1px solid var(--rarity-5-open-layer-bg-start);
+    filter: brightness(120%);
+}
+
+.vlc-result-item--rarity-5
+    .vlc-result-item__open-layer-new-tag {
+    color: var(--rarity-5-text-bright);
+}
+
+.vlc-result-item--rarity-5
+    .vlc-result-item__open-layer-icon-bg {
+    filter: brightness(150%);
+}
+
+.vlc-result-item--rarity-1 {
+    background: linear-gradient(
+        0deg,
+        var(--rarity-1-bg-start),
+        var(--rarity-1-bg-end)
+    );
+    border: 1px solid var(--rarity-1-bg-start);
+}
+
+.vlc-result-item--rarity-1 .vlc-result-item__weapon-name {
+    color: var(--rarity-1-text-bright);
+}
+
+.vlc-result-item--rarity-1 .vlc-result-item__tier {
+    color: var(--quality-tier-1-color);
+}
+
+.vlc-result-item--rarity-1 .vlc-result-item__reward-value {
+    color: var(--rarity-1-text-bright);
+}
+
+.vlc-result-item--rarity-2 {
+    background: linear-gradient(
+        0deg,
+        var(--rarity-2-bg-start),
+        var(--rarity-2-bg-end)
+    );
+    border: 1px solid var(--rarity-2-bg-start);
+}
+
+.vlc-result-item--rarity-2 .vlc-result-item__weapon-name {
+    color: var(--rarity-2-text-bright);
+}
+
+.vlc-result-item--rarity-2 .vlc-result-item__tier {
+    color: var(--quality-tier-2-color);
+}
+
+.vlc-result-item--rarity-2 .vlc-result-item__reward-value {
+    color: var(--rarity-2-text-bright);
+}
+
+.vlc-result-item--rarity-3 {
+    background: linear-gradient(
+        0deg,
+        var(--rarity-3-bg-start),
+        var(--rarity-3-bg-end)
+    );
+    border: 1px solid var(--rarity-3-bg-start);
+}
+
+.vlc-result-item--rarity-3 .vlc-result-item__weapon-name {
+    color: var(--rarity-3-text-bright);
+}
+
+.vlc-result-item--rarity-3 .vlc-result-item__tier {
+    color: var(--quality-tier-3-color);
+}
+
+.vlc-result-item--rarity-3 .vlc-result-item__reward-value {
+    color: var(--rarity-3-text-bright);
+}
+
+.vlc-result-item--rarity-4 {
+    background: linear-gradient(
+        0deg,
+        var(--rarity-4-bg-start),
+        var(--rarity-4-bg-end)
+    );
+    border: 1px solid var(--rarity-4-bg-start);
+}
+
+.vlc-result-item--rarity-4 .vlc-result-item__weapon-name {
+    color: var(--rarity-4-text-bright);
+}
+
+.vlc-result-item--rarity-4 .vlc-result-item__tier {
+    color: var(--quality-tier-4-color);
+}
+
+.vlc-result-item--rarity-4 .vlc-result-item__reward-value {
+    color: var(--rarity-4-text-bright);
+}
+
+.vlc-result-item--rarity-5 {
+    background: linear-gradient(
+        0deg,
+        var(--rarity-5-bg-start),
+        var(--rarity-5-bg-end)
+    );
+    border: 1px solid var(--rarity-5-bg-start);
+}
+
+.vlc-result-item--rarity-5 .vlc-result-item__weapon-name {
+    color: var(--rarity-5-text-bright);
+}
+
+.vlc-result-item--rarity-5 .vlc-result-item__tier {
+    color: var(--quality-tier-5-color);
+}
+
+.vlc-result-item--rarity-5 .vlc-result-item__reward-value {
+    color: var(--rarity-5-text-bright);
+}
+
+.vlc-result-item[data-quality-tier="1"]
+    .vlc-result-item__tier {
+    color: var(--quality-tier-1-color);
+}
+
+.vlc-result-item[data-quality-tier="2"]
+    .vlc-result-item__tier {
+    color: var(--quality-tier-2-color);
+}
+
+.vlc-result-item[data-quality-tier="3"]
+    .vlc-result-item__tier {
+    color: var(--quality-tier-3-color);
+}
+
+.vlc-result-item[data-quality-tier="4"]
+    .vlc-result-item__tier {
+    color: var(--quality-tier-4-color);
+}
+
+.vlc-result-item[data-quality-tier="5"]
+    .vlc-result-item__tier {
+    color: var(--quality-tier-5-color);
+}
+
+.vlc-result-item[data-quality-tier="1"]
+    .vlc-result-item__quality-float {
+    color: var(--quality-tier-1-color);
+}
+
+.vlc-result-item[data-quality-tier="2"]
+    .vlc-result-item__quality-float {
+    color: var(--quality-tier-2-color);
+}
+
+.vlc-result-item[data-quality-tier="3"]
+    .vlc-result-item__quality-float {
+    color: var(--quality-tier-3-color);
+}
+
+.vlc-result-item[data-quality-tier="4"]
+    .vlc-result-item__quality-float {
+    color: var(--quality-tier-4-color);
+}
+
+.vlc-result-item[data-quality-tier="5"]
+    .vlc-result-item__quality-float {
+    color: var(--quality-tier-5-color);
+}
+
+@media (max-width: 1200px) {
+    .vlc-result-item {
+        padding: 6px;
+    }
+
+    .vlc-result-item__weapon-name {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .vlc-result-item {
+        padding: 10px 6px;
+    }
+
+    .vlc-result-item__weapon-name {
+        font-size: 0.65rem;
+    }
+}

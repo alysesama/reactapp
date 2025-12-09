@@ -1,0 +1,75 @@
+[
+    {
+        "id": "bundle_1",
+        "name": "Sliver Rank",
+        "price_usd": 4.99,
+        "return_fixed": { "vpoint": 475 },
+        "return_first_bonus": { "vpoint": 475 },
+        "return_bonus": { "vpoint": 0 }
+    },
+    {
+        "id": "bundle_2",
+        "name": "Gold Rank",
+        "price_usd": 9.99,
+        "return_fixed": { "vpoint": 950 },
+        "return_first_bonus": { "vpoint": 950 },
+        "return_bonus": { "vpoint": 50 }
+    },
+    {
+        "id": "bundle_3",
+        "name": "Diamond Rank",
+        "price_usd": 29.99,
+        "return_fixed": { "vpoint": 1900 },
+        "return_first_bonus": { "vpoint": 1900 },
+        "return_bonus": { "vpoint": 150 }
+    },
+    {
+        "id": "bundle_4",
+        "name": "Ascendant Rank",
+        "price_usd": 34.99,
+        "return_fixed": { "vpoint": 3325 },
+        "return_first_bonus": { "vpoint": 3325 },
+        "return_bonus": { "vpoint": 325 }
+    },
+    {
+        "id": "bundle_5",
+        "name": "Immortal Rank",
+        "price_usd": 49.99,
+        "return_fixed": { "vpoint": 4750 },
+        "return_first_bonus": { "vpoint": 4750 },
+        "return_bonus": { "vpoint": 600 }
+    },
+    {
+        "id": "bundle_6",
+        "name": "Radiant Rank",
+        "price_usd": 99.99,
+        "return_fixed": { "vpoint": 9500 },
+        "return_first_bonus": { "vpoint": 9500 },
+        "return_bonus": { "vpoint": 1500 }
+    },
+    {
+        "id": "babo_luci",
+        "name": "Cán Bobo danh dan",
+        "price_usd": 999.99,
+        "return_fixed": { "vpoint": 950000 },
+        "return_first_bonus": { "vpoint": 950000 },
+        "return_bonus": { "vpoint": 150000 }
+    },
+    {
+        "id": "gaming_chair_vn",
+        "name": "Gaming Chair VN",
+        "price_usd": 9999.99,
+        "return_fixed": { "vpoint": 9500000 },
+        "return_first_bonus": { "vpoint": 9500000 },
+        "return_bonus": { "vpoint": 1500000 }
+    },
+    {
+        "id": "leviathan",
+        "name": "Leviathan",
+        "price_usd": 99999.99,
+        "return_fixed": { "vpoint": 95000000 },
+        "return_first_bonus": { "vpoint": 95000000 },
+        "return_bonus": { "vpoint": 15000000 }
+    }
+]
+

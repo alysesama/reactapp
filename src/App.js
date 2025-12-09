@@ -3,6 +3,7 @@ import TodoApp from "./todo-app/TodoApp";
 import WeatherPanel from "./component/WeatherPanel";
 import GitHubUserSearch from "./github-search/GitHubUserSearch";
 import GachaSim from "./gacha-sim/GachaSim";
+import ValorantCollection from "./gachalorant/ValorantCollection";
 import PageSwitchButton from "./component/PageSwitchButton";
 import "./App.css";
 
@@ -27,6 +28,13 @@ const workspaceModules = [
         description:
             "Mô phỏng tỷ lệ roll với kết quả trực quan.",
         component: GachaSim,
+    },
+    {
+        id: "valorant",
+        label: "Valorant Collection",
+        description:
+            "Gacha bộ sưu tập skin Valorant theo weapon pool.",
+        component: ValorantCollection,
     },
 ];
 

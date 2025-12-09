@@ -1,0 +1,23 @@
+.vlc-results {
+    width: 100%;
+    max-width: 1400px;
+    aspect-ratio: 6/2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .vlc-results {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vlc-results {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}

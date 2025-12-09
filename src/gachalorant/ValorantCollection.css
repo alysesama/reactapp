@@ -1,0 +1,299 @@
+@font-face {
+    font-family: "Valorant-Font";
+    src: url("../../public/valorant_assets/font/Valorant-Font.ttf");
+}
+
+.vlc-shell {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(2, 6, 23, 0.9);
+    border-top: 1px solid rgba(148, 163, 184, 0.25);
+    overflow: hidden;
+}
+
+.vlc-header {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: rgba(2, 6, 23, 0.97);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.vlc-header__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.vlc-header__title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e5e7eb;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.vlc-header__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vlc-currency {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(15, 23, 42, 0.8);
+    color: #e5e7eb;
+    font-weight: 700;
+}
+
+.vlc-currency--accent {
+    border-color: rgba(96, 165, 250, 0.6);
+    background: rgba(59, 130, 246, 0.18);
+}
+
+.vlc-currency__icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.vlc-currency__value {
+    min-width: 48px;
+    text-align: right;
+}
+
+.vlc-currency__add {
+    border: none;
+    background: rgba(59, 130, 246, 0.2);
+    color: #e5e7eb;
+    padding: 2px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: transform 0.15s ease;
+}
+
+.vlc-currency__add:hover {
+    transform: translateY(-1px);
+}
+
+.vlc-display {
+    flex: 1;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(
+        circle at top,
+        rgba(15, 23, 42, 0.96),
+        rgba(2, 6, 23, 0.92)
+    );
+}
+
+.vlc-empty {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.vlc-controls {
+    padding: 12px 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.vlc-pull-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.vlc-button {
+    padding: 12px 20px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+    background: transparent;
+    color: #e5e7eb;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.18s ease,
+        background 0.18s ease;
+    font-size: 0.88rem;
+}
+
+.vlc-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.6);
+    background: rgba(59, 130, 246, 0.18);
+}
+
+.vlc-button--accent {
+    border-color: rgba(147, 51, 234, 0.65);
+    background: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, 0.55),
+        rgba(147, 51, 234, 0.7)
+    );
+}
+
+.vlc-button--accent:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, 0.75),
+        rgba(147, 51, 234, 0.9)
+    );
+}
+
+.vlc-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.vlc-button:disabled:hover {
+    transform: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.vlc-button--accent:disabled:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, 0.55),
+        rgba(147, 51, 234, 0.7)
+    );
+}
+
+.vlc-pool-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 12px;
+    padding: 4px;
+    border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.vlc-pool-switch__btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #94a3b8;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    white-space: nowrap;
+}
+
+.vlc-pool-switch__btn:hover {
+    color: #e5e7eb;
+    background: rgba(59, 130, 246, 0.15);
+}
+
+.vlc-pool-switch__btn.is-active {
+    background: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, 0.5),
+        rgba(147, 51, 234, 0.5)
+    );
+    color: #e5e7eb;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.vlc-pool-tooltip {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    padding: 4px;
+    border-radius: 1px;
+    background: rgba(15, 23, 42, 0.98);
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    box-shadow: 0 18px 32px rgba(2, 6, 23, 0.85);
+    z-index: 30;
+    display: flex;
+    gap: 4px;
+    width: 460px;
+    height: 360px;
+}
+
+.vlc-pool-tooltip__column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.vlc-pool-tooltip__column:first-child
+    .vlc-pool-tooltip__cell,
+.vlc-pool-tooltip__column:nth-child(4)
+    .vlc-pool-tooltip__cell,
+.vlc-pool-tooltip__column:last-child
+    .vlc-pool-tooltip__cell {
+    flex: 1 1 20%;
+}
+
+.vlc-pool-tooltip__column:nth-child(2)
+    .vlc-pool-tooltip__cell,
+.vlc-pool-tooltip__column:nth-child(3)
+    .vlc-pool-tooltip__cell {
+    flex: 1 1 25%;
+}
+
+.vlc-pool-tooltip__cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+}
+
+.vlc-pool-tooltip__cell-btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 1px solid transparent;
+    background: rgba(15, 23, 42, 0.9);
+    color: #cbd5e1;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.05s ease;
+}
+
+.vlc-pool-tooltip__cell-btn:hover {
+    border-color: rgba(140, 205, 200, 0.5);
+    background: rgba(70, 100, 95, 0.75);
+    color: #e5e7eb;
+}
+
+.vlc-pool-tooltip__cell-btn.is-active {
+    border-color: rgba(140, 205, 200, 0.5);
+    background: rgba(70, 100, 95, 0.75);
+    color: #f9fafb;
+}
+
+@media (max-width: 480px) {
+    .vlc-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .vlc-controls {
+        justify-content: center;
+    }
+
+    .vlc-pull-buttons {
+        justify-content: center;
+    }
+}

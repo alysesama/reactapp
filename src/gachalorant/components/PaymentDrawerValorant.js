@@ -1,15 +1,34 @@
-import { useMemo, useState } from "react";
-import {
-    BASE_CURRENCY,
-    getBundleReward,
-    SUPPORTED_CURRENCIES,
-} from "./wallet";
-import "./PaymentDrawer.css";
+import { useEffect, useMemo, useState } from "react";
+import { getBundleInfo } from "../helpers/localStorageHelper";
+import "./PaymentDrawerValorant.css";
+
+const vPointIcon =
+    (process.env.PUBLIC_URL ?? "") +
+    "/valorant_assets/common/v-point.png";
 
 const PAYMENT_METHODS = [
     { id: "visa", label: "Visa" },
     { id: "mastercard", label: "Mastercard" },
 ];
+
+const SUPPORTED_CURRENCIES = [
+    { code: "USD", label: "USD", rate: 1 },
+    { code: "VND", label: "VND", rate: 24000 },
+    { code: "CNY", label: "CNY", rate: 7.2 },
+    { code: "EUR", label: "EUR", rate: 0.92 },
+];
+
+const buildRateMap = (overrides = {}) =>
+    SUPPORTED_CURRENCIES.reduce(
+        (acc, item) => ({
+            ...acc,
+            [item.code]: overrides[item.code] ?? item.rate,
+        }),
+        {}
+    );
+
+const DEFAULT_RATES = buildRateMap();
+const RATES_STORAGE_KEY = "gachalorant_currency_rates";
 
 const sanitizeNumber = (value) => value.replace(/\D+/g, "");
 
@@ -108,25 +127,38 @@ const generateRandomName = () => {
     return `${first} ${last}`;
 };
 
+const formatUsd = (value) =>
+    `$${(Number(value) || 0).toFixed(2)}`;
+
+const formatCurrency = (usdValue, currency, rateMap) => {
+    const rate = rateMap[currency] ?? 1;
+    const value = (Number(usdValue) || 0) * rate;
+    if (currency === "USD") {
+        return formatUsd(value);
+    }
+    return `${value.toFixed(2)} ${currency}`;
+};
+
+const convertToUsd = (amount, currency, rateMap) => {
+    const rate = rateMap[currency] ?? 1;
+    if (rate === 0) return 0;
+    return (Number(amount) || 0) / rate;
+};
+
+const formatNumber = (value) =>
+    Number(value || 0).toLocaleString();
+
 function PaymentPanel({
     wallet,
-    currency,
-    onCurrencyChange,
-    formatDisplay,
     selectedBundleId,
     onSelectBundle,
     onTopUp,
-    convertToCny,
+    currency,
+    onCurrencyChange,
+    rateMap,
 }) {
     const [isTopUpOpen, setIsTopUpOpen] = useState(false);
     const [topUpInput, setTopUpInput] = useState("");
-    const numericTopUp = Number(topUpInput) || 0;
-    const equivalentCny = convertToCny(
-        numericTopUp,
-        currency
-    );
-    const canConvert =
-        currency === BASE_CURRENCY || equivalentCny > 0;
 
     const handleTopUpSubmit = () => {
         const amount = Number(topUpInput);
@@ -134,15 +166,16 @@ function PaymentPanel({
             alert("Vui lòng nhập số tiền hợp lệ");
             return;
         }
-        const cnyValue = convertToCny(amount, currency);
-        if (currency !== BASE_CURRENCY && cnyValue <= 0) {
-            alert("Tỷ giá cho currency này chưa sẵn sàng");
-            return;
-        }
-        onTopUp(cnyValue);
+        const usdValue = convertToUsd(
+            amount,
+            currency,
+            rateMap
+        );
+        onTopUp(usdValue);
         setTopUpInput("");
         setIsTopUpOpen(false);
     };
+
     return (
         <div className="payment-panel">
             <div className="payment-panel__header">
@@ -168,11 +201,12 @@ function PaymentPanel({
                     </select>
                 </label>
                 <div className="payment-panel__balance">
-                    <span>
-                        Balance:{" "}
-                        {formatDisplay(
-                            wallet.balance_cny,
-                            currency
+                    <span>Balance:</span>
+                    <span className="payment-panel__balance-value">
+                        {formatCurrency(
+                            wallet.balance_usd,
+                            currency,
+                            rateMap
                         )}
                     </span>
                     <button
@@ -197,20 +231,12 @@ function PaymentPanel({
                                     )
                                 }
                             />
-                            <span className="payment-panel__topup-note">
-                                {canConvert
-                                    ? `≈ ¥${equivalentCny.toFixed(
-                                          2
-                                      )} CNY`
-                                    : "Đang tải tỷ giá..."}
-                            </span>
                             <div className="payment-panel__topup-actions">
                                 <button
                                     type="button"
                                     onClick={
                                         handleTopUpSubmit
                                     }
-                                    disabled={!canConvert}
                                 >
                                     Add
                                 </button>
@@ -229,31 +255,42 @@ function PaymentPanel({
                         </div>
                     )}
                 </div>
-                <div className="payment-panel__origeometry">
-                    Origeometry:{" "}
-                    {wallet.origeometry.toLocaleString()}
+                <div className="payment-panel__vp">
+                    <img
+                        className="vpoint-icon"
+                        src={vPointIcon}
+                        alt="V-Point"
+                    />{" "}
+                    {formatNumber(wallet.vpoint ?? 0)}
                 </div>
             </div>
             <div className="payment-panel__bundles">
                 {wallet.bundles_info.map((bundle) => {
-                    const reward = getBundleReward(bundle);
-                    const bonusValue =
-                        bundle.return_first_bonus_available
-                            ? bundle.return_first_bonus
-                                  .origeometry
-                            : bundle.return_bonus
-                                  .origeometry;
-                    const priceDisplay = formatDisplay(
-                        bundle.price_cny,
-                        currency
+                    const bundleInfo = getBundleInfo(
+                        bundle.id
                     );
+                    const reward = bundleInfo
+                        ? bundleInfo.totalVPoints
+                        : 0;
+                    const isSelected =
+                        selectedBundleId === bundle.id;
+                    const fixedVPoints = bundleInfo
+                        ? bundleInfo.fixedVPoints
+                        : bundle.return_fixed?.vpoint ?? 0;
+                    const bonusVPoints = bundleInfo
+                        ? bundleInfo.hasFirstBonus
+                            ? bundleInfo.firstBonusVPoints
+                            : bundleInfo.bonusVPoints
+                        : bundle.return_first_bonus
+                              ?.vpoint != null
+                        ? bundle.return_first_bonus.vpoint
+                        : bundle.return_bonus?.vpoint ?? 0;
                     return (
                         <button
                             key={bundle.id}
                             type="button"
                             className={`bundle-card${
-                                selectedBundleId ===
-                                bundle.id
+                                isSelected
                                     ? " is-selected"
                                     : ""
                             }`}
@@ -265,22 +302,23 @@ function PaymentPanel({
                                 {bundle.name}
                             </div>
                             <div className="bundle-card__reward">
-                                {reward} Origeometry
+                                {formatNumber(reward)}{" "}
+                                <img
+                                    className="vpoint-icon"
+                                    src={vPointIcon}
+                                    alt="V-Point"
+                                />
                             </div>
                             <div className="bundle-card__details">
-                                {
-                                    bundle.return_fixed
-                                        .origeometry
-                                }{" "}
-                                + Bonus: {bonusValue}
-                                {bundle.return_first_bonus_available && (
-                                    <span className="bundle-card__badge">
-                                        First bonus
-                                    </span>
-                                )}
+                                {fixedVPoints} +{" "}
+                                {bonusVPoints}
                             </div>
                             <div className="bundle-card__price">
-                                {priceDisplay}
+                                {formatCurrency(
+                                    bundle.price_usd,
+                                    currency,
+                                    rateMap
+                                )}
                             </div>
                         </button>
                     );
@@ -293,10 +331,9 @@ function PaymentPanel({
 function CheckoutPanel({
     wallet,
     selectedBundle,
-    currency,
-    formatDisplay,
     onCheckout,
-    isRateLoading,
+    currency,
+    rateMap,
 }) {
     const [selectedMethod, setSelectedMethod] = useState(
         PAYMENT_METHODS[0].id
@@ -310,9 +347,9 @@ function CheckoutPanel({
     const balanceEnough = useMemo(() => {
         if (!selectedBundle) return false;
         return (
-            wallet.balance_cny >= selectedBundle.price_cny
+            wallet.balance_usd >= selectedBundle.price_usd
         );
-    }, [wallet.balance_cny, selectedBundle]);
+    }, [wallet.balance_usd, selectedBundle]);
 
     const cardValid = useMemo(() => {
         if (!cardNumber || !expiry || !ccv) {
@@ -327,6 +364,33 @@ function CheckoutPanel({
             validateCcv(ccv)
         );
     }, [cardNumber, ccv, expiry, selectedMethod]);
+
+    const handleCheckout = async () => {
+        if (!selectedBundle) {
+            alert("Vui lòng chọn một bundle trước");
+            return;
+        }
+        if (!balanceEnough) {
+            alert(
+                "Balance không đủ để thanh toán bundle này"
+            );
+            return;
+        }
+        if (!cardValid) {
+            alert("Thông tin thẻ chưa hợp lệ");
+            return;
+        }
+        setIsProcessing(true);
+        try {
+            await onCheckout(selectedBundle);
+            setCardNumber("");
+            setCardHolder("");
+            setExpiry("");
+            setCcv("");
+        } finally {
+            setIsProcessing(false);
+        }
+    };
 
     const handleFillRandom = () => {
         const isVisaMethod = selectedMethod === "visa";
@@ -352,49 +416,18 @@ function CheckoutPanel({
         setCcv(randomCcv);
     };
 
-    const handleCheckout = async () => {
-        if (!selectedBundle) {
-            alert("Vui lòng chọn một bundle trước");
-            return;
-        }
-        if (!balanceEnough) {
-            alert(
-                "Balance không đủ để thanh toán bundle này"
-            );
-            return;
-        }
-        if (!cardValid) {
-            alert("Thông tin thẻ chưa hợp lệ");
-            return;
-        }
-        setIsProcessing(true);
-        try {
-            await onCheckout({
-                method: selectedMethod,
-                bundleId: selectedBundle.id,
-                paymentInfo: {
-                    cardNumber,
-                    cardHolder,
-                    expiry,
-                    ccv,
-                },
-            });
-            setCardNumber("");
-            setCardHolder("");
-            setExpiry("");
-            setCcv("");
-        } finally {
-            setIsProcessing(false);
-        }
-    };
-
     const totalDisplay = selectedBundle
-        ? formatDisplay(selectedBundle.price_cny, currency)
-        : formatDisplay(0, currency);
+        ? formatCurrency(
+              selectedBundle.price_usd,
+              currency,
+              rateMap
+          )
+        : formatCurrency(0, currency, rateMap);
 
-    const spentDisplay = formatDisplay(
-        wallet.balance_cny_spent,
-        currency
+    const spentDisplay = formatCurrency(
+        wallet.balance_usd_spent ?? 0,
+        currency,
+        rateMap
     );
 
     return (
@@ -454,25 +487,23 @@ function CheckoutPanel({
                         }
                         autoComplete="cc-exp"
                     />
-                    <div className="checkout-panel__ccv-group">
-                        <input
-                            type="text"
-                            placeholder="CCV"
-                            value={ccv}
-                            onChange={(event) =>
-                                setCcv(event.target.value)
-                            }
-                            autoComplete="cc-csc"
-                        />
-                        <button
-                            type="button"
-                            className="checkout-panel__random"
-                            onClick={handleFillRandom}
-                            title="Random valid card info"
-                        >
-                            Rand
-                        </button>
-                    </div>
+                    <input
+                        type="text"
+                        placeholder="CCV"
+                        value={ccv}
+                        onChange={(event) =>
+                            setCcv(event.target.value)
+                        }
+                        autoComplete="cc-csc"
+                    />
+                    <button
+                        type="button"
+                        className="checkout-panel__random"
+                        onClick={handleFillRandom}
+                        title="Random valid card info"
+                    >
+                        Rand
+                    </button>
                 </div>
             </div>
             <div className="checkout-panel__summary">
@@ -487,8 +518,7 @@ function CheckoutPanel({
                         !selectedBundle ||
                         !balanceEnough ||
                         !cardValid ||
-                        isProcessing ||
-                        isRateLoading
+                        isProcessing
                     }
                 >
                     Checkout
@@ -512,26 +542,74 @@ function CheckoutPanel({
     );
 }
 
-function PaymentDrawer({
+function PaymentDrawerValorant({
     isOpen,
     onClose,
     wallet,
-    currency,
-    onCurrencyChange,
-    formatDisplay,
-    selectedBundleId,
-    onSelectBundle,
     onTopUp,
     onCheckout,
-    convertToCny,
-    isRateLoading,
 }) {
-    const selectedBundle = useMemo(() => {
-        if (!wallet) return null;
-        return wallet.bundles_info.find(
-            (bundle) => bundle.id === selectedBundleId
-        );
-    }, [selectedBundleId, wallet]);
+    const [rates, setRates] = useState(DEFAULT_RATES);
+    const [currency, setCurrency] = useState("USD");
+    const [selectedBundleId, setSelectedBundleId] =
+        useState(null);
+
+    useEffect(() => {
+        try {
+            const cached = localStorage.getItem(
+                RATES_STORAGE_KEY
+            );
+            if (cached) {
+                const parsed = JSON.parse(cached);
+                setRates(buildRateMap(parsed));
+            }
+        } catch (error) {
+            console.warn("Cannot read cached rates", error);
+        }
+
+        const fetchRates = async () => {
+            try {
+                const response = await fetch(
+                    "https://open.er-api.com/v6/latest/USD"
+                );
+                if (!response.ok) {
+                    return;
+                }
+                const data = await response.json();
+                if (
+                    !data?.rates ||
+                    typeof data.rates !== "object"
+                ) {
+                    return;
+                }
+                const picked = {};
+                SUPPORTED_CURRENCIES.forEach((item) => {
+                    if (data.rates[item.code]) {
+                        picked[item.code] =
+                            data.rates[item.code];
+                    }
+                });
+                const merged = buildRateMap(picked);
+                setRates(merged);
+                localStorage.setItem(
+                    RATES_STORAGE_KEY,
+                    JSON.stringify(picked)
+                );
+            } catch (error) {
+                console.warn("Cannot fetch rates", error);
+            }
+        };
+
+        fetchRates();
+    }, []);
+
+    const selectedBundle = useMemo(
+        () =>
+            wallet.bundles_info.find(
+                (bundle) => bundle.id === selectedBundleId
+            ) ?? null,
+        [selectedBundleId, wallet.bundles_info]
+    );
 
     if (!isOpen) {
         return null;
@@ -557,21 +635,21 @@ function PaymentDrawer({
                 <div className="payment-drawer__body">
                     <PaymentPanel
                         wallet={wallet}
-                        currency={currency}
-                        onCurrencyChange={onCurrencyChange}
-                        formatDisplay={formatDisplay}
                         selectedBundleId={selectedBundleId}
-                        onSelectBundle={onSelectBundle}
+                        onSelectBundle={setSelectedBundleId}
                         onTopUp={onTopUp}
-                        convertToCny={convertToCny}
+                        currency={currency}
+                        onCurrencyChange={setCurrency}
+                        rateMap={rates}
                     />
                     <CheckoutPanel
                         wallet={wallet}
                         selectedBundle={selectedBundle}
+                        onCheckout={(bundle) => {
+                            onCheckout(bundle);
+                        }}
                         currency={currency}
-                        formatDisplay={formatDisplay}
-                        onCheckout={onCheckout}
-                        isRateLoading={isRateLoading}
+                        rateMap={rates}
                     />
                 </div>
             </div>
@@ -579,4 +657,4 @@ function PaymentDrawer({
     );
 }
 
-export default PaymentDrawer;
+export default PaymentDrawerValorant;
