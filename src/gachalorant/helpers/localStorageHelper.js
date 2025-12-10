@@ -3,6 +3,10 @@ import bundles from "../bundles.json";
 const WALLET_KEY = "gachalorant_wallet";
 const COLLECTION_KEY = "gachalorant_collection";
 
+const PUBLIC_ASSET_BASE = process.env.PUBLIC_URL ?? "";
+const LOCAL_WEAPONS_JSON = `${PUBLIC_ASSET_BASE}/valorant_assets/valorant_weapons.json`;
+const STATIC_ASSET_TIMEOUT = 5000;
+
 const RARITY_REWARD_TABLE = [
     { rarityId: 1, vPoint: 25, rPoint: 0 },
     { rarityId: 2, vPoint: 50, rPoint: 0 },
@@ -167,12 +171,53 @@ function calculateStatistics(wpDb) {
     return statistics;
 }
 
+function fetchWithTimeout(url, timeout) {
+    return Promise.race([
+        fetch(url),
+        new Promise((_, reject) =>
+            setTimeout(
+                () => reject(new Error("Timeout loading asset")),
+                timeout
+            )
+        ),
+    ]);
+}
+
+function mapLocalWeaponToApiFormat(entry) {
+    const parts = entry.wp_id.split("_");
+    const [category, ...rest] = parts;
+    const fileName = `${rest.join("_")}.png`;
+    const imageUrl = `${PUBLIC_ASSET_BASE}/valorant_assets/${category}/${fileName}`;
+    return {
+        id: entry.wp_id,
+        name: entry.wp_name,
+        rarity: entry.rarity,
+        category,
+        imageUrl,
+    };
+}
+
+async function loadWeaponsFromStatic() {
+    const response = await fetchWithTimeout(
+        LOCAL_WEAPONS_JSON,
+        STATIC_ASSET_TIMEOUT
+    );
+    if (!response.ok) {
+        throw new Error("Không thể load weapon JSON tĩnh");
+    }
+    const data = await response.json();
+    return data.map(mapLocalWeaponToApiFormat);
+}
+
 async function loadWeaponsFromAPI() {
     const DEFAULT_API_BASE_URL =
         process.env.REACT_APP_VALORANT_API_URL ||
         "http://localhost:4000";
     const endpoint = `${DEFAULT_API_BASE_URL}/api/valorant/weapons`;
-    const response = await fetch(endpoint);
+    const response = await fetchWithTimeout(
+        endpoint,
+        STATIC_ASSET_TIMEOUT
+    );
     if (!response.ok) {
         throw new Error(
             "Không thể load danh sách weapon Valorant"
@@ -249,8 +294,30 @@ async function ensureWeaponDB() {
     if (!shouldCheck) {
         return collection;
     }
+    let weapons = null;
+    let lastError = null;
     try {
-        const weapons = await loadWeaponsFromAPI();
+        weapons = await loadWeaponsFromStatic();
+    } catch (error) {
+        lastError = error;
+        try {
+            weapons = await loadWeaponsFromAPI();
+        } catch (apiError) {
+            console.error(
+                "Failed to load weapons from static assets:",
+                lastError
+            );
+            console.error(
+                "Failed to load weapons from API:",
+                apiError
+            );
+            return collection;
+        }
+    }
+    if (!weapons) {
+        return collection;
+    }
+    try {
         const newDb = buildWeaponDBFromWeapons(weapons);
         const mergedDb = mergeWeaponDBs(
             collection.wp_db || {},
@@ -273,7 +340,7 @@ async function ensureWeaponDB() {
         return updatedCollection;
     } catch (error) {
         console.error(
-            "Failed to load weapons from API:",
+            "Failed to build weapon database:",
             error
         );
         return collection;

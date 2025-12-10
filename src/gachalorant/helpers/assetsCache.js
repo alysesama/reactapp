@@ -1,4 +1,5 @@
 import { getPoolById, isKnifePool } from "./poolConfig";
+import { getCachedAsset } from "./cacheService";
 
 const DEFAULT_API_BASE_URL =
     process.env.REACT_APP_VALORANT_API_URL ||
@@ -6,6 +7,7 @@ const DEFAULT_API_BASE_URL =
 
 const PUBLIC_ASSET_BASE = process.env.PUBLIC_URL ?? "";
 const LOCAL_WEAPONS_JSON = `${PUBLIC_ASSET_BASE}/valorant_assets/valorant_weapons.json`;
+const STATIC_ASSET_TIMEOUT = 5000;
 
 let indexedWeapons = null;
 
@@ -41,8 +43,26 @@ function buildIndex(rawWeapons) {
     return index;
 }
 
+function fetchWithTimeout(url, timeout) {
+    return Promise.race([
+        fetch(url),
+        new Promise((_, reject) =>
+            setTimeout(
+                () => reject(new Error("Timeout loading static asset")),
+                timeout
+            )
+        ),
+    ]);
+}
+
 async function loadWeaponsFromLocal() {
-    const response = await fetch(LOCAL_WEAPONS_JSON);
+    let response = await getCachedAsset(LOCAL_WEAPONS_JSON);
+    if (!response) {
+        response = await fetchWithTimeout(
+            LOCAL_WEAPONS_JSON,
+            STATIC_ASSET_TIMEOUT
+        );
+    }
     if (!response.ok) {
         throw new Error("Không thể load weapon JSON tĩnh");
     }
@@ -53,7 +73,10 @@ async function loadWeaponsFromLocal() {
 
 async function loadWeaponsFromApi() {
     const endpoint = `${DEFAULT_API_BASE_URL}/api/valorant/weapons`;
-    const response = await fetch(endpoint);
+    const response = await fetchWithTimeout(
+        endpoint,
+        STATIC_ASSET_TIMEOUT
+    );
     if (!response.ok) {
         throw new Error(
             "Không thể load danh sách weapon Valorant"
