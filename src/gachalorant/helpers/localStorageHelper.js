@@ -176,7 +176,10 @@ function fetchWithTimeout(url, timeout) {
         fetch(url),
         new Promise((_, reject) =>
             setTimeout(
-                () => reject(new Error("Timeout loading asset")),
+                () =>
+                    reject(
+                        new Error("Timeout loading asset")
+                    ),
                 timeout
             )
         ),
@@ -240,6 +243,7 @@ function buildWeaponDBFromWeapons(weapons) {
         if (!existing) {
             wpDb[category].push({
                 id: weapon.id,
+                rarity: weapon.rarity,
                 max_qual: 0,
                 tier_obt_cnt: {
                     1: 0,
@@ -269,6 +273,7 @@ function mergeWeaponDBs(existingDb, newDb) {
             if (!existing) {
                 merged[category].push({
                     id: newWeapon.id,
+                    rarity: newWeapon.rarity,
                     max_qual: 0,
                     tier_obt_cnt: {
                         1: 0,
@@ -345,6 +350,17 @@ async function ensureWeaponDB() {
         );
         return collection;
     }
+}
+
+export async function getCollection() {
+    const collection = await ensureWeaponDB();
+    if (
+        !collection.wp_db ||
+        typeof collection.wp_db !== "object"
+    ) {
+        collection.wp_db = {};
+    }
+    return collection;
 }
 
 function updateStatisticsIncremental(
@@ -492,6 +508,7 @@ export async function processGachaResult(roll) {
     if (!weapon) {
         weapon = {
             id: weaponId,
+            rarity: finalRarityId,
             max_qual: 0,
             tier_obt_cnt: {
                 1: 0,

@@ -13,6 +13,7 @@ import { isKnifePool } from "./helpers/poolConfig";
 import PoolSwitch from "./components/PoolSwitch";
 import ResultList from "./components/ResultList";
 import CollectionContainer from "./components/CollectionContainer";
+import StatisticContainer from "./components/StatisticContainer";
 import PaymentDrawerValorant from "./components/PaymentDrawerValorant";
 import bundles from "./bundles.json";
 import "./ValorantCollection.css";
@@ -44,6 +45,12 @@ function ValorantCollection() {
     const [hasOpenLayers, setHasOpenLayers] =
         useState(false);
     const [isCollectionOpen, setIsCollectionOpen] =
+        useState(false);
+    const [isStatisticOpen, setIsStatisticOpen] =
+        useState(false);
+    const [skipNewLayer, setSkipNewLayer] =
+        useState(false);
+    const [includeHighRarity, setIncludeHighRarity] =
         useState(false);
     const [collectionPoolId, setCollectionPoolId] =
         useState(DEFAULT_POOL_ID);
@@ -106,8 +113,16 @@ function ValorantCollection() {
         setIsCollectionOpen(true);
     };
 
+    const handleOpenStatistic = () => {
+        setIsStatisticOpen(true);
+    };
+
     const handleCloseCollection = () => {
         setIsCollectionOpen(false);
+    };
+
+    const handleCloseStatistic = () => {
+        setIsStatisticOpen(false);
     };
 
     const handleTopUpUsd = (amount) => {
@@ -158,6 +173,13 @@ function ValorantCollection() {
                     >
                         Collection
                     </button>
+                    <button
+                        type="button"
+                        className="vlc-button"
+                        onClick={handleOpenStatistic}
+                    >
+                        Statistic
+                    </button>
                 </div>
                 <div className="vlc-header__right">
                     <div className="vlc-currency">
@@ -207,11 +229,38 @@ function ValorantCollection() {
                         onOpenLayerCountChange={
                             handleOpenLayerCountChange
                         }
+                        skipNewLayer={skipNewLayer}
+                        includeHighRarity={includeHighRarity}
                     />
                 )}
             </main>
 
             <footer className="vlc-controls">
+                <div className="vlc-pull-options">
+                    <label className="vlc-checkbox">
+                        <input
+                            type="checkbox"
+                            checked={skipNewLayer}
+                            onChange={(event) =>
+                                setSkipNewLayer(event.target.checked)
+                            }
+                        />
+                        <span>Skip NEW layer</span>
+                    </label>
+                    <label className="vlc-checkbox vlc-checkbox--nested">
+                        <input
+                            type="checkbox"
+                            checked={includeHighRarity}
+                            onChange={(event) =>
+                                setIncludeHighRarity(
+                                    event.target.checked
+                                )
+                            }
+                            disabled={!skipNewLayer}
+                        />
+                        <span>Include [Exclusive] and [Ultra]</span>
+                    </label>
+                </div>
                 <div className="vlc-pull-buttons">
                     <button
                         type="button"
@@ -241,6 +290,11 @@ function ValorantCollection() {
                 <CollectionContainer
                     poolId={collectionPoolId}
                     onClose={handleCloseCollection}
+                />
+            )}
+            {isStatisticOpen && (
+                <StatisticContainer
+                    onClose={handleCloseStatistic}
                 />
             )}
             {isPaymentOpen && (

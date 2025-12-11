@@ -1,7 +1,7 @@
 import { getRandomWeaponForPool } from "./assetsCache";
 import { KNIFE_POOL_ID } from "./poolConfig";
 
-const RARITY_TABLE = [
+export const RARITY_TABLE = [
     { id: 1, name: "Select Edition", probability: 79.92 },
     { id: 2, name: "Deluxe Edition", probability: 15.98 },
     { id: 3, name: "Premium Edition", probability: 3.2 },
@@ -9,7 +9,7 @@ const RARITY_TABLE = [
     { id: 5, name: "Ultra Edition", probability: 0.26 },
 ];
 
-const QUALITY_TIERS = [
+export const QUALITY_TIERS = [
     { id: 1, min: 0, max: 30 },
     { id: 2, min: 30, max: 55 },
     { id: 3, min: 55, max: 75 },

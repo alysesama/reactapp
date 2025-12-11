@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import YourLuckToday from "./yourlucktoday/YourLuckToday";
 import TodoApp from "./todo-app/TodoApp";
 import WeatherPanel from "./component/WeatherPanel";
 import GitHubUserSearch from "./github-search/GitHubUserSearch";
@@ -8,6 +9,13 @@ import PageSwitchButton from "./component/PageSwitchButton";
 import "./App.css";
 
 const workspaceModules = [
+    // {
+    //     id: "your_luck_today",
+    //     label: "How is your luck today?",
+    //     description:
+    //         "Thử vận may của bạn trong ngày hôm nay.",
+    //     component: YourLuckToday,
+    // },
     {
         id: "todo",
         label: "Todo Workspace",

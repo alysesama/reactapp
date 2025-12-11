@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./ResultItem.css";
 
 const QUALITY_TIER_ROMAN = {
@@ -44,10 +44,14 @@ function ResultItem({
     isNew,
     rewards,
     imageUrl,
+    allowOpenLayer = true,
     onOpenLayerClick,
 }) {
     const [isOpenLayerVisible, setIsOpenLayerVisible] =
-        useState(isNew ?? false);
+        useState(isNew && allowOpenLayer);
+    useEffect(() => {
+        setIsOpenLayerVisible(isNew && allowOpenLayer);
+    }, [isNew, allowOpenLayer]);
     const openLayerRef = useRef(null);
     const rarityClass = buildRarityClass(rarityId);
     const tierLabel = QUALITY_TIER_ROMAN[qualityTier] ?? "";
@@ -144,27 +148,29 @@ function ResultItem({
                     )}
                 </div>
             )}
-            {isNew && isOpenLayerVisible && (
-                <div
-                    ref={openLayerRef}
-                    className={`vlc-result-item__open-layer ${rarityClass}`.trim()}
-                    onClick={handleOpenLayerClick}
-                >
-                    <div className="vlc-result-item__open-layer-body">
-                        {rarityIconUrl && (
-                            <img
-                                className="vlc-result-item__open-layer-icon-bg"
-                                src={rarityIconUrl}
-                                alt=""
-                                aria-hidden="true"
-                            />
-                        )}
-                        <div className="vlc-result-item__open-layer-new-tag">
-                            NEW
+            {isNew &&
+                allowOpenLayer &&
+                isOpenLayerVisible && (
+                    <div
+                        ref={openLayerRef}
+                        className={`vlc-result-item__open-layer ${rarityClass}`.trim()}
+                        onClick={handleOpenLayerClick}
+                    >
+                        <div className="vlc-result-item__open-layer-body">
+                            {rarityIconUrl && (
+                                <img
+                                    className="vlc-result-item__open-layer-icon-bg"
+                                    src={rarityIconUrl}
+                                    alt=""
+                                    aria-hidden="true"
+                                />
+                            )}
+                            <div className="vlc-result-item__open-layer-new-tag">
+                                NEW
+                            </div>
                         </div>
                     </div>
-                </div>
-            )}
+                )}
         </article>
     );
 }
